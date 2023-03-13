@@ -10,13 +10,11 @@
     --border-radius: 20px;
 }
 
-
 .phone-screen{
-    height: 100vh;
     width: 100vw;
     background-color: var(--background-color);
-    overflow-y: scroll;
 }
+
 
 body{
     background-color: rgb(255, 255, 255);
