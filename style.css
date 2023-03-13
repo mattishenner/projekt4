@@ -21,7 +21,6 @@
 body{
     background-color: rgb(255, 255, 255);
     color: var(--black);
-    height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -137,6 +136,9 @@ header{
 }
 
 @media only screen and (min-width: 480px) {
+    body{
+        height: 100vh;
+    }
     .phone-screen{
         height: 90vh;
         width: unset;
