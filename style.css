@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color: #95E4A0;
+    --dark-color: #28392a;
+    --black: #232323;
+    --background-color: #F8F8F3;
+    --margin: 20px;
+    --card-width: clamp(100px, 40%, 180px);
+    --border-radius: 20px;
+}
+
+
+.phone-screen{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+    overflow-y: scroll;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    color: var(--black);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.side-scroll-container::-webkit-scrollbar{
+    display: none;
+}
+
+.margin{
+    margin: var(--margin);
+}
+.flex{
+    display: flex;
+}
+.center-y{
+    align-items: center;
+}
+.center-x{
+    justify-content: center;
+}
+
+nav{
+    position: sticky;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    padding: var(--margin);
+    justify-content: space-between;
+    box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.05);
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+}
+
+.nav-item{
+    text-align: center;
+    opacity: 0.3;
+}
+
+.nav-item p{
+    line-height: 1rem;
+    margin: 0;
+}
+
+.active-nav{
+    color: var(--dark-color);
+    opacity: 1;
+}
+
+.icon{
+    font-size: 2rem;
+}
+
+header{
+    justify-content: space-between;
+    padding: var(--margin);
+}
+
+.profile-picture{
+    width: 2.5rem;
+    border-radius: 2.5rem;
+    aspect-ratio: 1 / 1;
+}
+
+.banner{
+    width: 100%;
+    height: 160px;
+    background-color: var(--primary-color);
+    margin-bottom: calc(var(--margin) + 10px);
+}
+.banner h2, .banner p{
+    margin: 0;
+}
+
+
+.section-title{
+    margin: 10px var(--margin);
+}
+.overline{
+    opacity: 0.5;
+    font-size: 0.875rem;
+}
+
+
+.side-scroll-container{
+    display: flex;
+    overflow-x: scroll;
+    gap: var(--margin);
+    padding: 0 var(--margin) var(--margin);
+}
+
+.category-card{
+    width: var(--card-width);
+    aspect-ratio: 3 / 4;
+    background-color: white;
+    flex-shrink: 0;
+    border-radius: var(--border-radius);
+}
+
+.article-card{
+    width: calc(2 * var(--card-width) + var(--margin));
+    aspect-ratio: 16 / 9;
+    background-color: white;
+    flex-shrink: 0;
+    border-radius: var(--border-radius);
+}
+
+@media only screen and (min-width: 480px) {
+    .phone-screen{
+        height: 90vh;
+        width: unset;
+        aspect-ratio: 9 / 19.5;
+        background-color: var(--background-color);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.534);
+        border-radius: var(--border-radius);
+        overflow: scroll;
+        border: rgb(58, 58, 58) solid 10px;
+    }
+
+    nav{
+        border-radius: var(--border-radius);
+    }
+}
