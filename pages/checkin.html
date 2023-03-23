@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <script src="../scripts/checkin.js" defer></script>
 </head>
 <body>
 
@@ -16,11 +17,6 @@
 Hvis et element skal have flex gives class "flex"
 Hvis indhold i en container skal centreres horisontalt gives class "center-x"
 Hvis indhold i en container skal centreres vertikalt gives class "center-y"
-Hvis indhold i en container skal have space-between gives class "space-between"
-
-For at aligne noget til vores margin bruges class "margin"
-For at lave et afstandsstykke laves en div med class "buffer"
-
  -->
 
 
@@ -32,12 +28,17 @@ For at lave et afstandsstykke laves en div med class "buffer"
             <a href="#"><img src="https://picsum.photos/150" alt="" class="profile-picture"></a>
         </header>
 
-        <div class="banner flex center-y">
-            <div class="margin">
-                <p class="overline">Bla bla</p>
-                <h2>Bla bla bla</h2>
+        <section class="margin">
+            <p class="overline">Godmorgen Sarah</p>
+            <h2>Hvordan har du det i dag?</h2>
+            <div class="flex space-between">
+                <i class="icon" id="smiley1">❏</i>
+                <i class="icon" id="smiley2">❏</i>
+                <i class="icon" id="smiley3">❏</i>
+                <i class="icon" id="smiley4">❏</i>
             </div>
-        </div>
+        </section>
+        <div class="buffer"></div>
 
         <h2 class="section-title">Titel titel</h2>
         <div class="side-scroll-container">
@@ -45,14 +46,6 @@ For at lave et afstandsstykke laves en div med class "buffer"
             <div class="category-card"></div>
             <div class="category-card"></div>
             <div class="category-card"></div>
-        </div>
-
-        <h2 class="section-title">Titel titel</h2>
-        <div class="side-scroll-container">
-            <div class="article-card"></div>
-            <div class="article-card"></div>
-            <div class="article-card"></div>
-            <div class="article-card"></div>
         </div>
 
         <h2 class="section-title">Titel titel</h2>

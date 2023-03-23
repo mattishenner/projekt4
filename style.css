@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --primary-color: #95E4A0;
+    --primary-color: #71C67D;
     --dark-color: #28392a;
-    --black: #232323;
+    --black: #012B36;
     --background-color: #F8F8F3;
-    --margin: 20px;
+    --margin: 15px;
     --card-width: clamp(100px, 40%, 180px);
     --border-radius: 20px;
 }
@@ -27,8 +27,9 @@ body{
 }
 
 h2{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.5rem;
+    margin-top: 0;
 }
 
 .side-scroll-container::-webkit-scrollbar{
@@ -36,7 +37,7 @@ h2{
 }
 
 .margin{
-    margin: var(--margin);
+    margin: 0 var(--margin);
 }
 .flex{
     display: flex;
@@ -46,6 +47,13 @@ h2{
 }
 .center-x{
     justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.buffer{
+    height: 40px;
 }
 
 nav{
@@ -77,6 +85,7 @@ nav{
 
 .icon{
     font-size: 2rem;
+    font-style: normal;
 }
 
 header{
@@ -107,6 +116,7 @@ header{
 .overline{
     opacity: 0.5;
     font-size: 0.875rem;
+    margin-bottom: 0;
 }
 
 
