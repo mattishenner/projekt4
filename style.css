@@ -8,11 +8,17 @@
     --margin: 15px;
     --card-width: clamp(100px, 40%, 180px);
     --border-radius: 20px;
+    --drop-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
 }
 
 .phone-screen{
     width: 100vw;
     background-color: var(--background-color);
+}
+
+img{
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
 
@@ -39,6 +45,9 @@ h2{
 .margin{
     margin: 0 var(--margin);
 }
+.padding{
+    padding: 0 var(--margin);
+}
 .flex{
     display: flex;
 }
@@ -54,6 +63,9 @@ h2{
 
 .buffer{
     height: 40px;
+}
+.buffer-s{
+    height: 20px;
 }
 
 nav{
@@ -115,8 +127,8 @@ header{
 }
 .overline{
     opacity: 0.5;
-    font-size: 0.875rem;
-    margin-bottom: 0;
+    font-size: 1rem;
+    margin-bottom: 5px;
 }
 
 
@@ -141,6 +153,32 @@ header{
     background-color: white;
     flex-shrink: 0;
     border-radius: var(--border-radius);
+}
+
+
+/* ********************** | CHECK IN SECTION | ********************** */
+/* ********************** | CHECK IN SECTION | ********************** */
+#check-in-result{
+    background-color: white;
+    transition: height 500ms;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--drop-shadow);
+}
+#check-in-content{
+    box-sizing: border-box;
+}
+.gap{
+    gap: 20px;
+}
+.smiley{
+    width: 18%;
+    margin-bottom: 10px;
+    transition: opacity 400ms;
+}
+.inactive-smiley{
+    opacity: 0.2;
 }
 
 @media only screen and (min-width: 480px) {

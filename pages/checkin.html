@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js" defer></script>
     <script src="../scripts/checkin.js" defer></script>
+    <script src="../scripts/time.js" defer></script>
 </head>
 <body>
 
@@ -23,22 +24,26 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <div class="phone-screen">        
-        <header class="flex">
-            <i class="icon">❏</i>
-            <a href="#"><img src="https://picsum.photos/150" alt="" class="profile-picture"></a>
-        </header>
-
+        <img src="../img/top-scribbles.svg" alt="">
+        <!-- ********************** | CHECK IN | ********************** -->
+        <!-- ********************** | CHECK IN | ********************** -->
         <section class="margin">
             <p class="overline">Godmorgen Sarah</p>
             <h2>Hvordan har du det i dag?</h2>
             <div class="flex space-between">
-                <i class="icon" id="smiley1">❏</i>
-                <i class="icon" id="smiley2">❏</i>
-                <i class="icon" id="smiley3">❏</i>
-                <i class="icon" id="smiley4">❏</i>
+                <img src="../img/icons/smiley1.svg" alt="" class="icon smiley">
+                <img src="../img/icons/smiley2.svg" alt="" class="icon smiley">
+                <img src="../img/icons/smiley3.svg" alt="" class="icon smiley">
+                <img src="../img/icons/smiley4.svg" alt="" class="icon smiley">
+            </div>
+            <div id="check-in-result" class="check-in-active padding">
+                <div id="check-in-content">
+                </div>
             </div>
         </section>
-        <div class="buffer"></div>
+        <div class="buffer-s"></div>
+
+
 
         <h2 class="section-title">Titel titel</h2>
         <div class="side-scroll-container">
