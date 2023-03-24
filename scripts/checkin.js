@@ -1,23 +1,15 @@
 const smileys = document.querySelectorAll(".smiley");
-// smileys[0].addEventListener("click", () => handleCheckInClick(1));
-// smileys[1].addEventListener("click", () => handleCheckInClick(2));
-// smileys[2].addEventListener("click", () => handleCheckInClick(3));
-// smileys[3].addEventListener("click", () => handleCheckInClick(4));
-
 
 for (let i = 0; i < smileys.length; i++){
     const otherSmileys = Array.from(smileys).filter((el, j) => j !== i);
     smileys[i].addEventListener("click", () => {
         smileys[i].classList.remove("inactive-smiley");
-        // smileys[i].classList.toggle("inactive-smiley")
         otherSmileys.forEach((el) => {
             el.classList.add("inactive-smiley");
           });
         handleCheckInClick(i+1);
     });
 }
-
-
 
 
 let lastClicked = 0;
