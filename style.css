@@ -147,6 +147,20 @@ header{
     border-radius: var(--border-radius);
 }
 
+.category-card a{
+    text-decoration: none;
+    color: black;
+}
+
+.category-card h3{
+    text-align: center;
+    padding-top: 1px;
+}
+
+.category-card img{
+    margin: var(--margin);
+}
+
 .article-card{
     width: calc(2 * var(--card-width) + var(--margin));
     aspect-ratio: 16 / 9;
@@ -155,9 +169,17 @@ header{
     border-radius: var(--border-radius);
 }
 
+/*-------------------Flere hjælpemidler index page ------------------*/
 .help{
-    padding-left: 25px;
+    margin-left: 25px;
 }
+
+.arrow{
+    margin-right: 50px;
+    margin-top: 12px;
+    float: right;
+}
+
 
 /* ********************** | CHECK IN SECTION | ********************** */
 /* ********************** | CHECK IN SECTION | ********************** */
@@ -204,4 +226,3 @@ header{
     }
 }
 
-/*-------------------Flere hjælpemidler index page ------------------*/
