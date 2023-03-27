@@ -155,6 +155,9 @@ header{
     border-radius: var(--border-radius);
 }
 
+.help{
+    padding-left: 25px;
+}
 
 /* ********************** | CHECK IN SECTION | ********************** */
 /* ********************** | CHECK IN SECTION | ********************** */
@@ -200,3 +203,5 @@ header{
         border-radius: var(--border-radius);
     }
 }
+
+/*-------------------Flere hjælpemidler index page ------------------*/
