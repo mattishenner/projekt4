@@ -11,6 +11,14 @@
   --drop-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
 }
 
+.side-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.phone-screen::-webkit-scrollbar {
+  display: none;
+}
+
 .phone-screen {
   width: 100vw;
   background-color: var(--background-color);
@@ -49,6 +57,9 @@ h2 {
 }
 .flex {
   display: flex;
+}
+.flex-direction-column {
+  flex-direction: column;
 }
 .center-y {
   align-items: center;
@@ -199,52 +210,132 @@ header {
 }
 
 /* Log ind side */
+.login-flex {
+  height: 70vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .login-h1 {
   color: var(--dark-color);
-  position: absolute;
-  top: 350px;
+  margin-top: 250px;
   font-weight: 600;
   font-size: 40px;
+  text-align: center;
 }
 .login-h2 {
   color: var(--dark-color);
-  position: absolute;
-  top: 410px;
+  margin-top: -3px;
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
 }
 .login-button {
   background-color: var(--background-color);
   border: solid 2px var(--primary-color);
-  color: var(--primary-color);
   padding: 20px;
-  width: 15em;
+  display: block;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   border-radius: 15px;
-  margin-bottom: 21px;
+  margin: var(--margin);
   cursor: pointer;
-  position: absolute;
-  top: 663px;
   font-weight: 600;
   font-size: 20px;
+}
+.login-button a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 .opret-button {
   background-color: var(--primary-color);
   border: none;
   color: var(--background-color);
   padding: 20px;
-  width: 15em;
+  display: block;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   border-radius: 15px;
   cursor: pointer;
-  position: absolute;
-  top: 750px;
   font-weight: 600;
   font-size: 20px;
+  margin: var(--margin);
+}
+.opret-button a {
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+/* Preloader styling */
+.preloader {
+  overflow: hidden;
+}
+.preloader-bg {
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  aspect-ratio: 9 / 19.5;
+  height: 90vh;
+  background: var(--background-color);
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+}
+.preloader-bg.fade {
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+.preloader-text-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.preloader-img {
+  position: absolute;
+  opacity: 0;
+  transition: all 100ms ease-in-out;
+  top: 240px;
+}
+.preloader-text {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 100ms ease-in-out;
+  margin-right: 5px;
+  color: var(--dark-color);
+  top: 530px;
+  font-size: 60px;
+  font-weight: 800;
+}
+.preloader-span {
+  font-size: 60px;
+  color: var(--primary-color);
+  font-weight: 300;
+}
+.preloader-text.active {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+}
+.preloader-text.fade {
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+.preloader-img.imgactive {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+}
+.preloader-img.imgfade {
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+/* Preloader styles end */
+.random {
+  position: relative;
+  z-index: 1;
 }

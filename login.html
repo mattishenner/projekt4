@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="preloader-jonas.js" defer></script>
   </head>
   <body>
     <!-- ********************** | VEJLEDNING | ********************** -->
@@ -26,20 +27,36 @@ For at lave et afstandsstykke laves en div med class "buffer" / "buffer-s" for l
     <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <div class="phone-screen">
-      <div>
-        <img class="login-svg" src="img/top-scribbles.svg" />
+      <!--Preloader section-->
+      <div class="preloader" id="preloadhider">
+        <div class="preloader-bg">
+          <div class="preloader-text-container">
+            <img class="preloader-img" src="img/mindmate-mand.svg" />
+            <p class="preloader-text">
+              MIND<span class="preloader-span">MATE</span>
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="flex center-y center-x">
-        <h1 class="section-title login-h1">Hej!</h1>
-      </div>
-      <div class="flex center-y center-x">
-        <h2 class="section-title login-h2">Lad os komme i gang</h2>
-      </div>
-      <div class="flex center-y center-x">
-        <a href="index.html" class="login-button">Log ind</a>
-      </div>
-      <div class="flex center-y center-x">
-        <a href="#" class="opret-button">Opret</a>
+
+      <div class="random">
+        <div>
+          <img class="login-svg" src="img/top-scribbles.svg" />
+        </div>
+        <div class="flex login-flex">
+          <div>
+            <h1 class="section-title login-h1">Hej!</h1>
+            <h2 class="section-title login-h2">Lad os komme i gang</h2>
+          </div>
+          <div class="flex flex-direction-column">
+            <button class="login-button">
+              <a href="index.html">Log ind</a>
+            </button>
+            <button class="opret-button">
+              <a href="#">Opret</a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
