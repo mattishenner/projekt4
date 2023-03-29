@@ -142,7 +142,7 @@ header{
 .category-card{
     width: var(--card-width);
     aspect-ratio: 3 / 4;
-    background-color: rgb(255, 255, 255);
+    background-color: #C6E8C4;
     flex-shrink: 0;
     border-radius: var(--border-radius);
 }
@@ -155,6 +155,7 @@ header{
 .category-card h3{
     text-align: center;
     padding-top: 1px;
+    font-size: 16px;
 }
 
 .category-card img{
@@ -171,14 +172,33 @@ header{
 
 /*-------------------Flere hjælpemidler index page ------------------*/
 .help{
-    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    background-color: #C6E8C4;
+    border-radius: 20px;
+    margin: var(--margin);
+    font-size: 16px;
+}
+.helptext{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.helptext p{
+    opacity: 60%;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.helptext h3{
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+.help img{
+    margin-right: 20px;
 }
 
-.arrow{
-    margin-right: 50px;
-    margin-top: 12px;
-    float: right;
-}
 
 
 /* ********************** | CHECK IN SECTION | ********************** */
