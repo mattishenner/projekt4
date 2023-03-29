@@ -153,13 +153,13 @@ header{
 }
 
 .category-card h3{
-    text-align: center;
-    padding-top: 1px;
     font-size: 16px;
+    text-align: center;
 }
 
 .category-card img{
-    margin: var(--margin);
+    padding-right: 16px;
+    height: 70%;
 }
 
 .article-card{
