@@ -66,6 +66,7 @@ p{
 
 
 
+
 /* ********************** | CUSTOM CLASSES | ********************** */
 /* ********************** | CUSTOM CLASSES | ********************** */
 .margin{
@@ -322,6 +323,49 @@ header{
     background-size: 50%;
 }
 
+/* ********************** | TO-DO-LISTE | ********************** */
+/* ********************** | TO-DO-LISTE | ********************** */
+.to-do-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .to-do-list li input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .to-do-list li::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 0;
+  }
+  
+  .to-do-list li input[type="checkbox"]:checked + span::before {
+    content: "\2713";
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    font-size: 16px;
+    color: #fff;
+    z-index: 2;
+  }
 
 @media only screen and (min-width: 480px) {
     body{
