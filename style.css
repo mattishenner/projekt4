@@ -188,6 +188,9 @@ p{
 .center-text{
     text-align: center;
 }
+.white{
+    color: white;
+}
 
 
 
@@ -197,7 +200,7 @@ nav{
     position: sticky;
     bottom: 0;
     box-sizing: border-box;
-    background-color: white;
+    background-color: var(--background-color);
     display: flex;
     padding: var(--margin);
     justify-content: space-between;
@@ -208,6 +211,7 @@ nav{
 .nav-item{
     text-align: center;
     opacity: 0.3;
+    width: 30%;
 }
 .nav-item p{
     line-height: 1rem;
@@ -217,6 +221,11 @@ nav{
     color: var(--dark-color);
     opacity: 1;
 }
+
+.back-arrow img{
+    transform: scaleX(-1);
+}
+
 
 
 
@@ -336,7 +345,7 @@ header{
     z-index: 1;
 }
 .course-main{
-    background-color: white;
+    background-color: var(--card-color);
     box-shadow: var(--drop-shadow);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     position: relative;

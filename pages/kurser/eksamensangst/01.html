@@ -9,24 +9,10 @@
     <script src="../../../script.js" defer></script>
 </head>
 <body>
-
-<!-- ********************** | VEJLEDNING | ********************** -->
-<!-- ********************** | VEJLEDNING | ********************** -->
-<!-- 
-Hvis et element skal have flex gives class "flex"
-Hvis indhold i en container skal centreres horisontalt gives class "center-x"
-Hvis indhold i en container skal centreres vertikalt gives class "center-y"
- -->
-
-
-<!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
-<!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <div class="phone-screen">        
-        <!-- ********************** | CHECK IN | ********************** -->
-        <!-- ********************** | CHECK IN | ********************** -->
         <header class="sticky">
-            <i class="icon">❏</i>
             <div class="buffer-s"></div>
+            <a href="main.html" class="back-arrow"><img src="../../../img/arrow.svg" alt=""></a>
             <div class="buffer-s"></div>
             <div class="overline">Mini-kurser</div>
             <h1>Introduktion</h1>
@@ -44,7 +30,7 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
             <section class="margin">
                 <h2>Overskrift 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur doloremque beatae sit autem repudiandae!</p>
-                <u class="no-margin-bottom">
+                <ul class="no-margin-bottom">
                     <li>Pointe nr. 1</li>
                     <li>Den anden pointe</li>
                     <li>Pointe nr. treeeee</li>
@@ -65,17 +51,23 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
-            <div class="nav-item margin">
-                <i class="icon">❏</i>
-                <p>Nav1</p>
+            <div class="nav-item">
+                <a href="../../checkin.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Hjem</p>
+                </a>
             </div>
             <div class="nav-item active-nav">
-                <i class="icon">❏</i>
-                <p>Nav2</p>
+                <a href="../../kurser.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Kurser</p>
+                </a>
             </div>
-            <div class="nav-item margin">
-                <i class="icon">❏</i>
-                <p>Nav3</p>
+            <div class="nav-item">
+                <a href="../../værktøjer.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Værktøjer</p>
+                </a>
             </div>
         </nav>
 
