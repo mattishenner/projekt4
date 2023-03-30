@@ -483,3 +483,67 @@ header{
         opacity: 0;
     }
 }
+/* ********************** | Værktøjer undersider | ********************** */
+/* ********************** | Værktøjer undersider | ********************** */
+.task-container{
+    height: auto;
+    height: 70px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: black;
+    border: none;
+    outline: none;
+    background: #fff;
+    box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.task-container i{
+    padding: 15px;
+}
+.task-container h3,
+.task-container p{
+    margin: 0;
+    line-height: 0.2;
+}
+
+.dropdown{
+    height: 40px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: black;
+    border: none;
+    outline: none;
+    background: #fff;
+    box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.dropdown p,
+.dropdown i{
+    margin-top: 0;
+    height: 100%;
+}
+.dropdown .content p{
+    margin: 0 100px 0 15px;
+}
+.dropdown .content2 p{
+    margin: 0 165px 0 15px;
+} 
+.dropdown .content3 p{
+    margin: 0 130px 0 15px;
+} 
+.btn{
+    height: 30px;
+    font-size: 1.2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #71C67D;
+    margin-top: 20px;
+    padding: 15px 110px;
+    display: inline-block;
+}
+img{
+    border-radius: var(--border-radius);
+}
