@@ -51,6 +51,13 @@ h4{
     font-size: 1.25rem;
     font-weight: 400;
 }
+h5{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: var(--margin);
+}
 p{
     line-height: 1.125rem;
     font-weight: 400;
@@ -75,6 +82,18 @@ p{
 }
 .margin-bottom{
     margin-bottom: var(--margin);
+}
+.small-margin-right{
+    margin-right: calc(var(--margin)/2);
+}
+.small-margin-left{
+    margin-left: calc(var(--margin)/2);
+}
+.small-margin-top{
+    margin-top: calc(var(--margin)/2);
+}
+.small-margin-bottom{
+    margin-bottom: calc(var(--margin)/2);
 }
 .no-margin{
     margin: 0;
@@ -108,7 +127,6 @@ p{
     top: 0;
     z-index: 0;
 }
-
 .buffer{
     height: 40px;
 }
@@ -118,6 +136,13 @@ p{
 .faded{
     opacity: .5;
 }
+.link-style-none{
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+
 
 nav{
     position: sticky;
@@ -226,6 +251,14 @@ header{
     padding: 0 15px;
 }
 
+.info-card{
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--drop-shadow);
+    overflow: hidden;
+}
+
 
 /* ********************** | CHECK IN SECTION | ********************** */
 /* ********************** | CHECK IN SECTION | ********************** */
@@ -269,6 +302,25 @@ header{
 }
 
 
+/* ********************** | VÆRKTØJER | ********************** */
+/* ********************** | VÆRKTØJER | ********************** */
+.tools-card{
+    background-repeat: no-repeat; 
+    background-position: center; 
+   
+}
+
+.tc1{
+    background-size: 50%;
+}
+
+.tc2{
+    background-size: 65%;
+}
+
+.tc3{
+    background-size: 50%;
+}
 
 
 @media only screen and (min-width: 480px) {
