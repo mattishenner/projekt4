@@ -20,6 +20,9 @@ img{
     max-inline-size: 100%;
     block-size: auto;
 }
+p{
+    font-size: 0.875rem;
+}
 
 
 body{
@@ -105,22 +108,6 @@ header{
     padding: var(--margin);
 }
 
-.profile-picture{
-    width: 2.5rem;
-    border-radius: 2.5rem;
-    aspect-ratio: 1 / 1;
-}
-
-.banner{
-    width: 100%;
-    height: 160px;
-    background-color: var(--primary-color);
-    margin-bottom: calc(var(--margin) + 10px);
-}
-.banner h2, .banner p{
-    margin: 0;
-}
-
 
 .section-title{
     margin: 10px var(--margin);
@@ -172,10 +159,7 @@ header{
 
 /*-------------------Flere hjælpemidler index page ------------------*/
 .help{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 350px;
     background-color: #C6E8C4;
     border-radius: 20px;
     margin: var(--margin);
