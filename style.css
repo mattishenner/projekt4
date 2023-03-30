@@ -405,18 +405,14 @@ header{
 /* ********************** | LOGIN | ********************** */
 /* ********************** | LOGIN | ********************** */
 .login-container{
-    justify-content: flex-end;
+    justify-content: space-around;
     display: flex;
-    height: 90%;
-}
-
-.login-text{
-    margin-top: 15vh;
-    margin-bottom: auto;
+    min-height: 90vh;
 }
 
 .login-screen{
     position: relative;
+    overflow: hidden;
 }
 
 /* Preloader */
@@ -453,7 +449,6 @@ header{
         overflow: scroll;
 
     }
-
     nav{
         border-radius: var(--border-radius);
     }
