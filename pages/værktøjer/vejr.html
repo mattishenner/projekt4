@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
-    <script src="../script.js" defer></script>
-    <script src="../scripts/checkin.js" defer></script>
-    <script src="../scripts/time.js" defer></script>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <script src="../../scripts/checkin.js" defer></script>
+    <script src="../../scripts/time.js" defer></script>
 </head>
 <body>
 
@@ -24,17 +24,18 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <div class="phone-screen">        
-        <img src="../img/top-scribbles.svg" alt="">
+        <header>
+            <div class="buffer-s"></div>
+            <a href="vejr.html" class="back-arrow"><img src="../../../img/arrow.svg" alt=""></a>
+            <div class="buffer"></div>
+            <div class="overline">Værktøjer</div>
+            <h1>Vejrtrækningsøvelser</h1>
+            <p class="faded">Denne øvelse er bla bla bla lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Architecto soluta est odio laborum ad porro.</p>
+        </header>
 
         <section class="margin">
-            <p class="overline">Velkommen til</p>
-            <h1>Vejrtræknings-øvelser</h1>
-            <p>Hvad end du har al tid i verden eller er presset på tid, har vi en øvelse for dig. 
-            Husk på - 5 minutter er bedre end ingen.<br>God fornøjelse!</p>
-        </section>
-
-        <section class="margin">
-            <a href="#" class="task-container flex center-y">
+            <a href="vejr_1.html" class="task-container flex center-y">
                 <i class="icon">❏</i>
                 <div>
                     <h3>Meditativ vejrtrækning</h3>
@@ -42,7 +43,7 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
                     <p class="overline">5 - 20 min</p> 
                 </div>
             </a>
-            <a href="#" class="task-container flex center-y">
+            <a href="vejr_2.html" class="task-container flex center-y">
                 <i class="icon">❏</i>
                 <div>
                     <h3>Dobbelt inhalering</h3>
@@ -50,7 +51,7 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
                     <p class="overline">5 min</p> 
                 </div>
             </a>
-            <a href="#" class="task-container flex center-y">
+            <a href="vejr_3.html" class="task-container flex center-y">
                 <i class="icon">❏</i>
                 <div>
                     <h3>Rolig vejrtrækning</h3>
@@ -60,20 +61,34 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
             </a>
         </section>
 
+<!-- ********************** | Skal slettes senere | ********************** -->
+<!-- ********************** | Skal slettes senere | ********************** -->
+<div class="buffer"></div>
+<div class="buffer"></div>
+<div class="buffer"></div>
+<div class="buffer"></div>
+<div class="buffer"></div>
+
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
+            <div class="nav-item">
+                <a href="../checkin.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Hjem</p>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="../kurser.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Kurser</p>
+                </a>
+            </div>
             <div class="nav-item active-nav">
-                <i class="icon">❏</i>
-                <p>Nav1</p>
-            </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav2</p>
-            </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav3</p>
+                <a href="../værktøjer.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Værktøjer</p>
+                </a>
             </div>
         </nav>
 

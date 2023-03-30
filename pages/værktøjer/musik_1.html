@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
-    <script src="../script.js" defer></script>
-    <script src="../scripts/checkin.js" defer></script>
-    <script src="../scripts/time.js" defer></script>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <script src="../../scripts/checkin.js" defer></script>
+    <script src="../../scripts/time.js" defer></script>
 </head>
 <body>
 
@@ -24,27 +24,28 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <div class="phone-screen">        
-        <img src="../img/top-scribbles.svg" alt="">
-
-        <section class="margin">
-            <p class="overline">Afslappende musik</p>
+        <header>
+            <div class="buffer-s"></div>
+            <a href="musik.html" class="back-arrow"><img src="../../../img/arrow.svg" alt=""></a>
+            <div class="buffer-s"></div>
+            <div class="overline">Afslappende musik</div>
             <h1>Stress af</h1>
-            <p>Denne øvelse er bla bla bla lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Architecto soluta est odio laborum ad porro.</p>
-        </section>
+            <p class="faded">Denne øvelse er bla bla bla lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Architecto soluta est odio laborum ad porro.</p>
+        </header>
 
         <section class="margin">
-            <div class="dropdown flex center-y">
+            <div class="dropdown flex center-y space-between">
                 <div class="content3">
                     <p class="overline">Playliste 1</p> 
                 </div>
-                <i class="icon">❏</i>
+                <i class="icon margin-right">❏</i>
             </div>
-            <div class="dropdown flex center-y">
+            <div class="dropdown flex center-y space-between">
                 <div class="content2">
                     <p class="overline">5 min</p> 
                 </div>
-                <i class="icon">❏</i>
+                <i class="icon margin-right">❏</i>
             </div>
 
             <div class="">
@@ -63,17 +64,23 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
+            <div class="nav-item">
+                <a href="../checkin.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Hjem</p>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="../kurser.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Kurser</p>
+                </a>
+            </div>
             <div class="nav-item active-nav">
-                <i class="icon">❏</i>
-                <p>Nav1</p>
-            </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav2</p>
-            </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav3</p>
+                <a href="../værktøjer.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Værktøjer</p>
+                </a>
             </div>
         </nav>
 

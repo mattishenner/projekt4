@@ -27,7 +27,7 @@ img{
     block-size: auto;
 }
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #242b29;
     color: var(--black);
     margin: 0;
     display: flex;
@@ -70,6 +70,11 @@ p{
     line-height: 1.125rem;
     font-weight: 400;
     font-size: 0.875rem;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
 }
 .btn, .btn-secondary{
     font-size: 1.25rem;
@@ -338,7 +343,7 @@ header{
 .course-overview{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--card-color);
     box-shadow: var(--drop-shadow);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     position: relative;
@@ -443,7 +448,7 @@ header{
         width: unset;
         aspect-ratio: 9 / 19.5;
         background-color: var(--background-color);
-        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.234);
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0);
         border-radius: var(--border-radius);
         overflow: scroll;
 
@@ -486,15 +491,11 @@ header{
 /* ********************** | Værktøjer undersider | ********************** */
 /* ********************** | Værktøjer undersider | ********************** */
 .task-container{
-    height: auto;
-    height: 70px;
     border-radius: var(--border-radius);
     text-decoration: none;
-    color: black;
-    border: none;
-    outline: none;
-    background: #fff;
-    box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.05);
+    color: var(--black);
+    background: var(--card-color);
+    box-shadow: var(--drop-shadow);
     margin-bottom: 20px;
 }
 .task-container i{
@@ -508,7 +509,7 @@ header{
 
 .dropdown{
     height: 40px;
-    border-radius: var(--border-radius);
+    border-radius: calc(var(--border-radius) / 2);
     text-decoration: none;
     color: black;
     border: none;
@@ -531,19 +532,6 @@ header{
 .dropdown .content3 p{
     margin: 0 130px 0 15px;
 } 
-.btn{
-    height: 30px;
-    font-size: 1.2rem;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    color: #fff;
-    border: none;
-    outline: none;
-    background: #71C67D;
-    margin-top: 20px;
-    padding: 15px 110px;
-    display: inline-block;
-}
 img{
     border-radius: var(--border-radius);
 }
