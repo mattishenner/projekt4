@@ -270,7 +270,7 @@ header{
 .article-card{
     margin-bottom: 30px;
     aspect-ratio: 19 / 10;
-    background-color: white;
+    background-color: var(--card-color);
     flex-shrink: 0;
     border-radius: var(--border-radius);
     box-shadow: var(--drop-shadow);
@@ -290,7 +290,7 @@ header{
 
 .info-card{
     margin-bottom: 30px;
-    background-color: #fff;
+    background-color: var(--card-color);
     border-radius: var(--border-radius);
     box-shadow: var(--drop-shadow);
     overflow: hidden;
@@ -363,62 +363,39 @@ header{
     background-position: center; 
    
 }
-
 .tc1{
     background-size: 50%;
 }
-
 .tc2{
     background-size: 65%;
 }
-
 .tc3{
     background-size: 50%;
 }
 
 /* ********************** | TO-DO-LISTE | ********************** */
 /* ********************** | TO-DO-LISTE | ********************** */
+.to-do-list ul{
+    padding: 0;
+}
 .to-do-list li {
     list-style: none;
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-  }
+    padding-left: 36px;
+    margin-bottom: 25px;
+}
   
-  .to-do-list li input[type="checkbox"] {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    z-index: 1;
-  }
-  
-  .to-do-list li::before {
+.to-do-list li::before {
     content: "";
     display: inline-block;
     position: absolute;
     left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #aaa;
+    top: -0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--primary-color);
     border-radius: 50%;
-    background-color: #fff;
-    z-index: 0;
-  }
-  
-  .to-do-list li input[type="checkbox"]:checked + span::before {
-    content: "\2713";
-    display: block;
-    position: absolute;
-    left: 3px;
-    top: 2px;
-    font-size: 16px;
-    color: #fff;
-    z-index: 2;
-  }
+}
 
 /* ********************** | LOGIN | ********************** */
 /* ********************** | LOGIN | ********************** */
