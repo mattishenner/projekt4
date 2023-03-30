@@ -71,7 +71,7 @@ p{
     font-weight: 400;
     font-size: 0.875rem;
 }
-.btn{
+.btn, .btn-secondary{
     font-size: 1.25rem;
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -88,6 +88,7 @@ p{
     background-color: transparent;
     border: var(--primary-color) 2px solid;
     color: var(--primary-color);
+    box-sizing: border-box;
 }
 
 
@@ -366,6 +367,43 @@ header{
 }
 
 
+/* ********************** | LOGIN | ********************** */
+/* ********************** | LOGIN | ********************** */
+.login-container{
+    justify-content: flex-end;
+    display: flex;
+    height: 90%;
+}
+
+.login-text{
+    margin-top: 15vh;
+    margin-bottom: auto;
+}
+
+.login-screen{
+    position: relative;
+}
+
+/* Preloader */
+.preloader{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--background-color);
+    animation: load 3s forwards ease;
+}
+
+.preloader img{
+    width: 80%;
+    animation: load-img 2.5s forwards ease;
+}
+
+
 @media only screen and (min-width: 480px) {
     body{
         height: 100vh;
@@ -386,3 +424,32 @@ header{
     }
 }
 
+
+/* ********************** | ANIMATIONER | ********************** */
+/* ********************** | ANIMATIONER | ********************** */
+
+@keyframes load{
+    60%{
+        opacity: 1;
+    }
+    99.9%{
+        transform: translateX(0%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+@keyframes load-img{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    75%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+    }
+}
