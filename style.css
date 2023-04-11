@@ -367,3 +367,54 @@ header{
         border-radius: var(--border-radius);
     }
 }
+
+/* ************** Quiz ************** */
+.app{
+    background-color: #fff;
+    border-radius: var(--border-radius);
+}
+.app h3{
+    padding: 20px;
+    color: var(--black);
+    font-weight: 600;
+}
+.quiz{
+    padding: 40px 0;
+}
+.answer-btn{
+    background: #ECECE5;
+    color: var(--black);
+    font-weight: 600;
+    width: 80%;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.answer-btn:hover:not([disabled]){
+    background: var(--primary-color);
+}
+.answer-btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+     background: var(--primary-color);
+     color: #fff;
+     font-weight: 500;
+     width: 180px;
+     border: 0;
+     padding: 10px;
+     margin: 20px auto 0;
+     border-radius: 5px;
+     cursor: pointer;
+     display: none;
+}
+.correct{
+    background: var(--primary-color);
+}
+.incorrect{
+    background: red;
+}

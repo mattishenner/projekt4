@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../../style.css">
-    <script src="../../../script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -28,39 +28,23 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
             <i class="icon">❏</i>
             <div class="buffer-s"></div>
             <div class="buffer-s"></div>
-            <div class="overline">Mini-kurser</div>
-            <h1>Introduktion</h1>
+            <div class="overline">Eksamensangst</div>
+            <h1>Quiz</h1>
         </header>
         <main class="course-main">
-            <section class="margin">
-                <h2>Overskrift 1</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, voluptate dolorum obcaecati voluptatum dicta non architecto. Adipisci, aspernatur, tenetur et praesentium mollitia architecto fugiat iure, non quam cumque a tempore.</p>
-            </section>
-            <div class="buffer-s"></div>
-            <section>
-                <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/812359131?h=942921fd87&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            </section>
-            <div class="buffer-s"></div>
-            <section class="margin">
-                <h2>Overskrift 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur doloremque beatae sit autem repudiandae!</p>
-                <u class="no-margin-bottom">
-                    <li>Pointe nr. 1</li>
-                    <li>Den anden pointe</li>
-                    <li>Pointe nr. treeeee</li>
-                    <li>Pointe nr. Bla</li>
-                </ul>
-                <div class="buffer"></div>
-            </section>
-            <section class="margin">
-                <a href="#" class="btn">Færdig</a>
-            </section>
-            <div class="buffer"></div>
+            <div class="app">
+                <div class="quiz">
+                    <h3 id="question">Spørgsmål her</h3>
+                    <div id="answer-buttons">
+                        <button class="answer-btn">Svar 1</button>
+                        <button class="answer-btn">Svar 2</button>
+                        <button class="answer-btn">Svar 3</button>
+                        <button class="answer-btn">Svar 4</button>
+                    </div>
+                    <button id="next-btn">Næste</button>
+                </div>
+            </div>
         </main>
-
-
-
-
 
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
