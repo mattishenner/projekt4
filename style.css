@@ -423,7 +423,7 @@ header{
 }
 .confetti{
     position: absolute;
-    top: 0;
+    top: -200px;
     pointer-events: none;
-    display: none;
+    width: 100%;
 }

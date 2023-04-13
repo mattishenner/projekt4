@@ -6,9 +6,9 @@ const questions = [
         question: "Hvad er spørgsmål 1?",
         answers: [
             { text: "Bla 1", correct: false},
-            { text: "Bla bla 2", correct: true},
+            { text: "Bla bla 2", correct: false},
             { text: "Bla bla bla 3", correct: false},
-            { text: "Bla 4", correct: false}
+            { text: "Bla 4", correct: true}
         ]
     },
     {
@@ -23,8 +23,8 @@ const questions = [
     {
         question: "Hvad er spørgsmål 3?",
         answers: [
-            { text: "Bla 1", correct: false},
-            { text: "Bla bla 2", correct: true},
+            { text: "Bla 1", correct: true},
+            { text: "Bla bla 2", correct: false},
             { text: "Bla bla bla 3", correct: false},
             { text: "Bla 4", correct: false}
         ]
@@ -33,8 +33,8 @@ const questions = [
         question: "Hvad er spørgsmål 4?",
         answers: [
             { text: "Bla 1", correct: false},
-            { text: "Bla bla 2", correct: true},
-            { text: "Bla bla bla 3", correct: false},
+            { text: "Bla bla 2", correct: false},
+            { text: "Bla bla bla 3", correct: true},
             { text: "Bla 4", correct: false}
         ]
     },
@@ -65,6 +65,7 @@ function startQuiz(){
     score = 0;
     nextButton.innerHTML = "Næste";
     showQuestion();
+    // resetAnimation();
 }
 
 //Denne funktion vil vise spørgsmålet med nummer og svarmulighederne der hører til 
@@ -126,6 +127,7 @@ function showScore(){
     questionElement.innerHTML = `Godt gået!<br><br>Du svarede rigtigt på ${score} ud af ${questions.length}!`;
     continueButton.innerHTML = "Færdig";
     continueButton.style.display = "block";
+    playAnimation();
 };
 
 // Vil vise spørgsmål eller score, hvis der ikke er flere spørgsmål
@@ -151,12 +153,26 @@ nextButton.addEventListener("click", ()=>{
 
 startQuiz();
 
-// *************** Animation *************** //
-var animation = bodymovin.loadAnimation({
+// *************** Confetti Animation *************** //
+let animation = bodymovin.loadAnimation({
     container: document.getElementById('animation container'),
     path: 'confeti-animation.json',
     render: 'svg',
-    loop: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     name: 'conf animation'
 });
+
+const confetti = document.querySelector(".confetti");
+
+function resetAnimation() {
+    animation.goToAndStop(0, true);
+    confetti.style.opacity = "0";
+}
+
+function playAnimation() {
+    animation.play();
+    confetti.style.opacity = "1";
+}
+
+resetAnimation();
