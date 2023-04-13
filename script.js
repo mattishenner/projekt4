@@ -51,9 +51,9 @@ const questions = [
 
 //Tilføjelse af variablerne for 3 elementer (question, answer-btn, next-btn)
 const questionElement = document.getElementById("question");
-const scoretextElement = document.getElementById("score-text")
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const continueButton = document.getElementById("continue-btn");
 
 //Variabler for at holde styr på spørgsmåls index og score
 let currentQuestionIndex = 0;
@@ -123,11 +123,11 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = `Du fik ${score} ud af ${questions.length}!`;
+    questionElement.innerHTML = `Godt gået!<br><br>Du svarede rigtigt på ${score} ud af ${questions.length}!`;
     nextButton.innerHTML = "Prøv igen";
     nextButton.style.display = "block";
 
-    continueButton.innerHTML = "Forsæt med quiz";
+    continueButton.innerHTML = "Forsæt";
     continueButton.style.display = "block";
 };
 

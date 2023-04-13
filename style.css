@@ -384,10 +384,11 @@ header{
 .answer-btn{
     background: #ECECE5;
     color: var(--black);
+    font-size: 1rem;
     font-weight: 600;
     width: 80%;
     border: none;
-    padding: 15px;
+    padding: 14px;
     margin: 10px 0;
     text-align: left;
     border-radius: 0 20px 20px 0;
@@ -402,25 +403,24 @@ header{
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
-    width: 90%;
+    width: 85%;
     border: 0;
-    padding: 10px;
+    padding: 14px;
     margin: 20px auto 0;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     display: none;
 }
 #continue-btn{
-    background: #fff;
+    background: none;
     color: var(--primary-color);
-    border: 2px solid var(--primary-color);
     font-size: 1rem;
     font-weight: 500;
-    width: 90%;
-    border: 0;
-    padding: 10px;
+    width: 85%;
+    border: 2px solid var(--primary-color);
+    padding: 14px;
     margin: 20px auto 0;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     display: none;
 }
