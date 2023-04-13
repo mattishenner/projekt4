@@ -149,3 +149,13 @@ nextButton.addEventListener("click", ()=>{
 });
 
 startQuiz();  
+
+// *************** Animation *************** //
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('animation container'),
+    path: 'confeti-animation.json',
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    name: 'conf animation'
+});

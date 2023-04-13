@@ -394,9 +394,6 @@ header{
     cursor: pointer;
     transition: all 0.3s;
 }
-.answer-btn:hover:not([disabled]){
-    background: var(--primary-color);
-}
 .answer-btn:disabled{
     cursor: no-drop;
 }
