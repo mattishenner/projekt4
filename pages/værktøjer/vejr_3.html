@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../dropdown.css">
     <script src="../../script.js" defer></script>
     <script src="../../scripts/checkin.js" defer></script>
     <script src="../../scripts/time.js" defer></script>
+    <script src="../../dropdowns.js" defer></script>
 </head>
 <body>
 
@@ -37,15 +39,20 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
         <section class="margin">
             <div class="dropdown flex center-y space-between">
                 <div class="content">
-                    <p class="overline">Baggrundslyd</p> 
+                    <p class="overline">Baggrundslyd</p>
                 </div>
-                <i class="icon margin-right">❏</i>
+                <button class="margin-right">
+                    <img onclick="rotateArrow(0)" src="../../img/arrow.svg" class="down-arrow" alt="Pil ned">
+                </button>
             </div>
             <div class="dropdown flex center-y space-between">
                 <div class="content2">
-                    <p class="overline">5 min</p> 
+                    <p class="overline">Antal minutter</p>
+                     
                 </div>
-                <i class="icon margin-right">❏</i>
+                <button class="margin-right">
+                    <img onclick="rotateArrow(1)" src="../../img/arrow.svg" class="down-arrow" alt="Pil ned">
+                </button>
             </div>
 
             <img src="../../img/rolig-vejrtrækning.png" alt="">

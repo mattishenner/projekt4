@@ -232,6 +232,20 @@ nav{
     transform: scaleX(-1);
 }
 
+.down-arrow{
+    transition-duration: 0.2s;
+}
+
+.dropdownrotate{
+    transform: rotate(90deg);
+}
+
+button{
+    background-color: transparent;
+    border-width: 0;
+    cursor: pointer;
+}
+
 
 
 
