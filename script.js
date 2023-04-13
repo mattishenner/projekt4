@@ -124,7 +124,7 @@ function selectAnswer(e){
 function showScore(){
     resetState();
     questionElement.innerHTML = `Godt gået!<br><br>Du svarede rigtigt på ${score} ud af ${questions.length}!`;
-    continueButton.innerHTML = "Forsæt";
+    continueButton.innerHTML = "Færdig";
     continueButton.style.display = "block";
 };
 

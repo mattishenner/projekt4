@@ -381,6 +381,9 @@ header{
 .quiz{
     padding: 40px 0;
 }
+.quiz a{
+    text-decoration: none;
+}
 .answer-btn{
     background: #ECECE5;
     color: var(--black);
@@ -401,14 +404,14 @@ header{
 #next-btn,
 #continue-btn{
     background: var(--primary-color);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
+    color: var(--background-color);
+    font-size: 1.25rem;
     width: 85%;
-    border: 0;
-    padding: 14px;
+    border: none;
+    text-decoration: none;
+    padding: 0.75rem 0;
     margin: 20px auto 0;
-    border-radius: 10px;
+    border-radius: calc(var(--border-radius)/2);
     cursor: pointer;
     display: none;
 }
