@@ -398,7 +398,8 @@ header{
 .answer-btn:disabled{
     cursor: no-drop;
 }
-#next-btn{
+#next-btn,
+#continue-btn{
     background: var(--primary-color);
     color: #fff;
     font-size: 1rem;
@@ -411,22 +412,15 @@ header{
     cursor: pointer;
     display: none;
 }
-#continue-btn{
-    background: none;
-    color: var(--primary-color);
-    font-size: 1rem;
-    font-weight: 500;
-    width: 85%;
-    border: 2px solid var(--primary-color);
-    padding: 14px;
-    margin: 20px auto 0;
-    border-radius: 10px;
-    cursor: pointer;
-    display: none;
-}
 .correct{
     background: var(--primary-color);
 }
 .incorrect{
     background: red;
+}
+.confetti{
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    display: none;
 }

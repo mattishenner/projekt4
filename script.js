@@ -124,9 +124,6 @@ function selectAnswer(e){
 function showScore(){
     resetState();
     questionElement.innerHTML = `Godt gået!<br><br>Du svarede rigtigt på ${score} ud af ${questions.length}!`;
-    nextButton.innerHTML = "Prøv igen";
-    nextButton.style.display = "block";
-
     continueButton.innerHTML = "Forsæt";
     continueButton.style.display = "block";
 };
@@ -152,7 +149,7 @@ nextButton.addEventListener("click", ()=>{
     }
 });
 
-startQuiz();  
+startQuiz();
 
 // *************** Animation *************** //
 var animation = bodymovin.loadAnimation({
