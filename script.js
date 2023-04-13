@@ -51,6 +51,7 @@ const questions = [
 
 //Tilføjelse af variablerne for 3 elementer (question, answer-btn, next-btn)
 const questionElement = document.getElementById("question");
+const scoretextElement = document.getElementById("score-text")
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
@@ -62,7 +63,7 @@ let score = 0;
 function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "Next";
+    nextButton.innerHTML = "Næste";
     showQuestion();
 }
 
@@ -125,6 +126,9 @@ function showScore(){
     questionElement.innerHTML = `Du fik ${score} ud af ${questions.length}!`;
     nextButton.innerHTML = "Prøv igen";
     nextButton.style.display = "block";
+
+    continueButton.innerHTML = "Forsæt med quiz";
+    continueButton.style.display = "block";
 };
 
 // Vil vise spørgsmål eller score, hvis der ikke er flere spørgsmål

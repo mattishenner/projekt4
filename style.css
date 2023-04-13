@@ -398,16 +398,31 @@ header{
     cursor: no-drop;
 }
 #next-btn{
-     background: var(--primary-color);
-     color: #fff;
-     font-weight: 500;
-     width: 180px;
-     border: 0;
-     padding: 10px;
-     margin: 20px auto 0;
-     border-radius: 5px;
-     cursor: pointer;
-     display: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 90%;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+#continue-btn{
+    background: #fff;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 90%;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
 }
 .correct{
     background: var(--primary-color);
