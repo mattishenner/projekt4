@@ -6,7 +6,7 @@
     --black: #012B36;
     --background-color: #F9F9F6;
     --card-color: #ECECE5;
-    --margin: 15px;
+    --margin: 10px;
     --card-width: clamp(120px, 40%, 250px);
     --border-radius: 20px;
     --drop-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
@@ -15,6 +15,23 @@
     display: none;
 }
 
+/* ********************** | FONTS | ********************** */
+/* ********************** | FONTS | ********************** */
+@font-face {
+    font-family: "PP Eiko";
+    src: url("fonts/PP-eiko/PPEiko-Thin.otf");
+    font-weight: 100 200;
+}
+@font-face {
+    font-family: "PP Eiko";
+    src: url("fonts/PP-eiko/PPEiko-Medium.otf");
+    font-weight: 300 500;
+}
+@font-face {
+    font-family: "PP Eiko";
+    src: url("fonts/PP-eiko/PPEiko-Heavy.otf");
+    font-weight: 600 900;
+}
 
 /* ********************** | GENERAL | ********************** */
 /* ********************** | GENERAL | ********************** */
@@ -37,9 +54,13 @@ body{
 }
 h1{
     margin-top: 0;
+    font-family: "PP Eiko";
+    font-weight: 500;
+    font-size: 2.5rem;
 }
 h2{
-    font-weight: 600;
+    font-family: "PP Eiko";
+    font-weight: 500;
     font-size: 1.5rem;
     margin-top: 0;
 }
@@ -151,6 +172,9 @@ a{
 .buffer-s{
     height: 20px;
 }
+.buffer-l{
+    height: 60px;
+}
 
 
 /* Til flexboxes */
@@ -165,6 +189,12 @@ a{
 }
 .space-between{
     justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.flex-end{
+    justify-content: flex-end;
 }
 .column{
     flex-direction: column;
@@ -198,7 +228,12 @@ a{
     color: white;
 }
 
-
+/* ********************** | BACKGROUND IMG | ********************** */
+/* ********************** | BACKGROUND IMG | ********************** */
+.background-blob{
+    background-image: url(img/background-blob.svg);
+    background-repeat: no-repeat;
+}
 
 /* ********************** | NAVIGATION | ********************** */
 /* ********************** | NAVIGATION | ********************** */
@@ -226,18 +261,29 @@ nav{
 .active-nav{
     color: var(--dark-color);
     opacity: 1;
+    background-image: url(img/blob1.svg);
+    background-repeat: no-repeat;
+    /* background-position-x: center; */
+    background-position-x: 60%;
+    background-position-y: 40%;
+}
+.active-nav p{
+    font-weight: 600;
 }
 
 .back-arrow img{
     transform: scaleX(-1);
 }
+.course-icon{
+    transform: translateY(2px);
+}
 
 
 
 
-.icon{
-    font-size: 2rem;
-    font-style: normal;
+.icon img, .login-text img{
+    border-radius: 0;
+    padding-bottom: 5px;
 }
 header{
     justify-content: space-between;
@@ -257,7 +303,8 @@ header{
     display: flex;
     overflow-x: scroll;
     gap: var(--margin);
-    padding: 0 var(--margin) var(--margin);
+    padding: 20px var(--margin);
+    margin-top: -20px;
 }
 
 .category-card{
@@ -266,10 +313,12 @@ header{
     background-color: var(--card-color);
     flex-shrink: 0;
     border-radius: var(--border-radius);
+    box-shadow: var(--drop-shadow);
 }
 
 .category-card img{
-    height: 70%;
+    height: 60%;
+    margin: 15% 10px 10% 10px;
 }
 
 .article-card{
@@ -329,7 +378,7 @@ header{
     gap: 20px;
 }
 .smiley{
-    width: 18%;
+    width: 16%;
     margin-bottom: 10px;
     transition: opacity 400ms;
 }
@@ -410,6 +459,10 @@ header{
     min-height: 90vh;
 }
 
+.login-text img{
+    width: 80%;
+}
+
 .login-screen{
     position: relative;
     overflow: hidden;
@@ -430,8 +483,13 @@ header{
 }
 
 .preloader img{
-    width: 80%;
+    border-radius: 0;
     animation: load-img 2.5s forwards ease;
+}
+
+.fade-in-delayed{
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
 
 
@@ -466,21 +524,30 @@ header{
         transform: translateX(0%);
     }
     100%{
-        opacity: 0;
-        transform: translateX(100%);
+        /* opacity: 0;
+        transform: translateX(100%); */
     }
 }
 @keyframes load-img{
     0%{
         opacity: 0;
-        transform: translateY(50px);
-    }
-    75%{
-        opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(50vh);
     }
     100%{
+        opacity: 1;
+        transform: translateY(30vh);
+    }
+}
+
+@keyframes fade-in{
+    0%{
         opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 /* ********************** | Værktøjer undersider | ********************** */
