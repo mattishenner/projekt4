@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="../../script.js" defer></script>
@@ -22,6 +23,9 @@
         <!-- ********************** | TO-DO LISTE | ********************** -->
         <!-- ********************** | TO-DO LISTE | ********************** -->
         <header>
+            <div class="buffer-s"></div>
+            <a href="../værktøjer.html" class="back-arrow"><img src="../../../img/arrow.svg" alt=""></a>
+            <div class="buffer"></div>
             <p class="overline">Værktøjer</p>
             <h1>Hvad har du brug for?</h1>
         </header>
@@ -55,6 +59,7 @@
 
             <input id="input-to-do" type="text" id="new-task-input" placeholder="Skriv din opgave her">
             <button onclick="addTask()" id="add-task-btn">Tilføj til listen</button>
+            <div class="buffer-s"></div>
         </section>
         <div class="buffer-s"></div>
 
@@ -65,16 +70,22 @@
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
             <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav1</p>
-            </div>
-            <div class="nav-item active-nav">
-                <i class="icon">❏</i>
-                <p>Nav2</p>
+                <a href="../checkin.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Hjem</p>
+                </a>
             </div>
             <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav3</p>
+                <a href="../kurser.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Kurser</p>
+                </a>
+            </div>
+            <div class="nav-item active-nav">
+                <a href="../værktøjer.html" class="link-style-none">
+                    <i class="icon">❏</i>
+                    <p>Værktøjer</p>
+                </a>
             </div>
         </nav>
 

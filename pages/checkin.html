@@ -23,71 +23,90 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
 
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
-    <div class="phone-screen">        
-        <img src="../img/top-scribbles.svg" alt="">
+    <div class="phone-screen background-blob">        
+        
         <!-- ********************** | CHECK IN | ********************** -->
         <!-- ********************** | CHECK IN | ********************** -->
-        <section class="margin">
-            <p class="overline">Godmorgen Sarah</p>
-            <h2>Hvordan har du det i dag?</h2>
-            <div class="flex space-between">
-                <img src="../img/icons/smiley1.svg" alt="" class="icon smiley">
-                <img src="../img/icons/smiley2.svg" alt="" class="icon smiley">
-                <img src="../img/icons/smiley3.svg" alt="" class="icon smiley">
-                <img src="../img/icons/smiley4.svg" alt="" class="icon smiley">
-            </div>
-            <div id="check-in-result" class="check-in-active padding">
-                <div id="check-in-content">
+        <header class="background-blob">
+            <div class="buffer"></div>
+            <section class="margin center-text hero">
+                <p class="overline">Godmorgen Sarah</p>
+                <h1 class="no-margin-bottom">Hvordan har du det i dag?</h1>
+                <div class="flex space-around margin-top">
+                    <img src="../img/icons/smiley1.svg" alt="" class="icon smiley">
+                    <img src="../img/icons/smiley2.svg" alt="" class="icon smiley">
+                    <img src="../img/icons/smiley3.svg" alt="" class="icon smiley">
+                    <img src="../img/icons/smiley4.svg" alt="" class="icon smiley">
                 </div>
+                <div id="check-in-result" class="check-in-active padding">
+                    <div id="check-in-content">
+                    </div>
+                </div>
+            </section>
+            <div class="buffer-s"></div>
+        </header>
+
+
+        <h2 class="section-title">Mini-kurser</h2>
+        <div class="side-scroll-container">
+            <a href="kurser/eksamensangst/main.html" class="category-card flex column center-text link-style-none">
+                <img src="../img/cards/Eksamensangst.svg" alt="Test grafik" class="margin-top">
+                <h6>Eksamensangst</h6>
+            </a>
+            <a href="kurser.html" class="category-card flex column center-text link-style-none">
+                <img src="../img/cards/Balance.svg" alt="Kalender grafik" class="margin-top">
+                <h6>Balance</h6>
+            </a>
+            <a href="kurser.html" class="category-card flex column center-text link-style-none">
+                <img src="../img/cards/Fællesskab.svg" alt="Streset grafik" class="margin-top">
+                <h6>Fællesskab</h6>
+            </a>
+            <a href="kurser.html" class="category-card flex column link-style-none center-x center-y">
+                <h6 class="faded no-margin-bottom">Se alle</h6>
+            </a>
+            
+        </div>
+
+
+        <h2 class="section-title">Andre hjælpemidler</h2>
+            <div class="help flex center-y">
+                <div class="margin">
+                    <p class="small-margin-bottom"><b>Headspace Odense</b></p>
+                    <p class="light-text no-margin-top">Telefon: 53 73 30 04<br>
+                    Send en gratis SMS på 1403</p>
+                </div>
+                <a href="#" class="margin-right"><img src="../img/arrow.svg" alt="pil"></a>
             </div>
-        </section>
-        <div class="buffer-s"></div>
-
-
-
-        <h2 class="section-title">Titel titel</h2>
-        <div class="side-scroll-container">
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-        </div>
-
-        <h2 class="section-title">Titel titel</h2>
-        <div class="side-scroll-container">
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-        </div>
-
-        <h2 class="section-title">Titel titel</h2>
-        <div class="side-scroll-container">
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-            <div class="category-card"></div>
-        </div>
-
+            <div class="help flex center-y">
+                <div class="margin">
+                    <p class="small-margin-bottom"><b>SPS Vejledning</b></p>
+                    <p class="light-text no-margin-top">Mail: sps@ucl.dk <br>
+                    Tlf: 65 43 45 37</p>
+                </div>
+                <a href="#" class="margin-right"><img src="../img/arrow.svg" alt="pil"></a>
+            </div>
+        
 
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
-            <div class="nav-item active-nav">
-                <i class="icon">❏</i>
-                <p>Nav1</p>
+            <div class="nav-item active-nav flex column flex-end">
+                <a href="checkin.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/home.svg" alt=""></i>
+                    <p>Hjem</p>
+                </a>
             </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav2</p>
+            <div class="nav-item flex column flex-end">
+                <a href="kurser.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/courses.svg" alt="" class="course-icon"></i>
+                    <p>Kurser</p>
+                </a>
             </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav3</p>
-            </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav4</p>
+            <div class="nav-item flex column flex-end">
+                <a href="værktøjer.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/tools.svg" alt=""></i>
+                    <p>Værktøjer</p>
+                </a>
             </div>
         </nav>
 

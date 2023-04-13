@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,46 +11,48 @@
     <script src="../scripts/checkin.js" defer></script>
     <script src="../scripts/time.js" defer></script>
 </head>
+
 <body>
 
-<!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
-<!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
-    <div class="phone-screen">        
-        <img src="../img/top-scribbles.svg" alt="">
+    <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
+    <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
+    <div class="phone-screen background-blob">
         <!-- ********************** | CHECK IN | ********************** -->
         <!-- ********************** | CHECK IN | ********************** -->
-        <header>
-            <h1>Mini-kurser</h1>
-            <p class="faded">Vores minikurser er bla bla bla lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta est odio laborum ad porro.</p>
+        <header >
+            <div class="buffer-l"></div>
+            <h1 class="no-margin-bottom">Mini-kurser</h1>
+            <p class="faded">Vores minikurser er bla bla bla lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto soluta est odio laborum ad porro.</p>
+            <div class="buffer-s"></div>
         </header>
         <section>
-            <div class="article-card margin" style="background-image: url(https://picsum.photos/300);">
-                <div class="card-gradient">
-                    <p class="white">Mini-kursus</p>
-                    <h3>Eksamensangst</h3>
-                </div>
-            </div>
+            <a href="kurser/eksamensangst/main.html" class="link-style-none">
+                <div class="article-card margin" style="background-image: url(https://picsum.photos/300);">
+                    <div class="card-gradient">
+                        <p class="white no-margin-bottom">Mini-kursus</p>
+                        <h3>Eksamensangst</h3>
+                    </div>
 
-            <div class="article-card margin" style="background-image: url(https://picsum.photos/301);">
-                <div class="card-gradient">
-                    <p class="white">Mini-kursus</p>
-                    <h3>Eksamensangst</h3>
                 </div>
-            </div>
+            </a>
+            <a href="kurser/eksamensangst/main.html" class="link-style-none">
+                <div class="article-card margin" style="background-image: url(https://picsum.photos/302);">
+                    <div class="card-gradient">
+                        <p class="white no-margin-bottom">Mini-kursus</p>
+                        <h3>Strukturér dit studie</h3>
+                    </div>
+                </div>
+            </a>
 
-            <div class="article-card margin" style="background-image: url(https://picsum.photos/302);">
-                <div class="card-gradient">
-                    <p class="white">Mini-kursus</p>
-                    <h3>Eksamensangst</h3>
+            <a href="kurser/eksamensangst/main.html" class="link-style-none">
+                <div class="article-card margin" style="background-image: url(https://picsum.photos/303);">
+                    <div class="card-gradient">
+                        <p class="white no-margin-bottom">Mini-kursus</p>
+                        <h3>Stresshåndtering</h3>
+                    </div>
                 </div>
-            </div>
-
-            <div class="article-card margin" style="background-image: url(https://picsum.photos/303);">
-                <div class="card-gradient">
-                    <p class="white">Mini-kursus</p>
-                    <h3>Eksamensangst</h3>
-                </div>
-            </div>
+            </a>
 
         </section>
         <div class="buffer-s"></div>
@@ -58,21 +61,28 @@
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav1</p>
+            <div class="nav-item flex column flex-end">
+                <a href="checkin.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/home.svg" alt=""></i>
+                    <p>Hjem</p>
+                </a>
             </div>
-            <div class="nav-item active-nav">
-                <i class="icon">❏</i>
-                <p>Nav2</p>
+            <div class="nav-item active-nav flex column flex-end">
+                <a href="kurser.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/courses.svg" alt="" class="course-icon"></i>
+                    <p>Kurser</p>
+                </a>
             </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav3</p>
+            <div class="nav-item flex column flex-end">
+                <a href="værktøjer.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/tools.svg" alt=""></i>
+                    <p>Værktøjer</p>
+                </a>
             </div>
         </nav>
 
     </div>
-    
+
 </body>
+
 </html>

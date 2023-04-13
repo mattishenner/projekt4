@@ -21,9 +21,8 @@ function handleCheckInClick(smileyClicked){
     if (smileyClicked === 1 && lastClicked !== 1){
         lastClicked = 1;
         returnContent = 
-        `<p>Du er trist :( <br>
-            Ja du er øv </p>
-        <p>Du er trist :(</p>`
+        `<p>Du er trist :(</p>
+        <p>Det er trist.</p>`
     } else if (smileyClicked === 2 && lastClicked !== 2){
         lastClicked = 2;
         returnContent = 
@@ -31,7 +30,9 @@ function handleCheckInClick(smileyClicked){
     } else if (smileyClicked === 3 && lastClicked !== 3){
         lastClicked = 3;
         returnContent = 
-        `<p>Du er ret glad :)</p>`
+        `<p>Forskning viser, at et afslappet humør gør os i stand til at lære bedre, da opmærksomheden skærpes.
+        Overvej at udnytte dit gode humør til at få mere ud af et mini-kursus.</p>
+        <a href="#">Lad os gøre det</a>`
     } else if (smileyClicked === 4 && lastClicked !== 4){
         lastClicked = 4;
         returnContent = 

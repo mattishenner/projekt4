@@ -1,4 +1,4 @@
-function getTime() {
+function getGreeting() {
     let today = new Date();
     let time = today.getHours()
     let greeting;
