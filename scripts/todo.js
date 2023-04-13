@@ -96,3 +96,5 @@ function checkAmountOfTasks(ul){
     const numberOfTasks = ul.getElementsByTagName("li").length;
     return numberOfTasks;
 }
+
+showTask();

@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="../../script.js" defer></script>
@@ -23,44 +22,43 @@
         <!-- ********************** | TO-DO LISTE | ********************** -->
         <!-- ********************** | TO-DO LISTE | ********************** -->
         <header>
-            <div class="buffer-s"></div>
-            <a href="../værktøjer.html" class="back-arrow"><img src="../../../img/arrow.svg" alt=""></a>
-            <div class="buffer"></div>
             <p class="overline">Værktøjer</p>
-            <h1>Hvad har du brug for?</h1>
+            <h1>To-do liste</h1>
         </header>
 
-        <form action="">
-            <input type="radio" name="priority" id="radio-high-priority" checked>
-            <label class="radio-text" for="radio-high-priority">Høj prioritet</label>
-            <br>
-            <input type="radio" name="priority" id="radio-medium-priority">
-            <label class="radio-text" for="radio-medium-priority">Middel prioritet</label>
-            <br>
-            <input type="radio" name="priority" id="radio-low-priority">
-            <label class="radio-text" for="radio-low-priority">Lav prioritet</label>
-        </form>
+        <main>
+            <section class="to-do-list margin">
+                <h5>Høj prioritet</h5>
+                <ul id="high-importance"></ul>
 
-        <section class="to-do-list margin">
-            <h2>Høj prioritet</h2>
-            <ul id="high-importance">
-               
-            </ul>
+                <h5>Middel prioritet</h5>
+                <ul id="medium-importance"></ul>
 
-            <h2>Middel prioritet</h2>
-            <ul id="medium-importance">
-               
-            </ul>
+                <h5>Lav prioritet</h5>
+                <ul id="low-importance"></ul>
+            </section>
 
-            <h2>Lav prioritet</h2>
-            <ul id="low-importance">
-               
-            </ul>
+            <section class="add-to-do-section padding">
 
-            <input id="input-to-do" type="text" id="new-task-input" placeholder="Skriv din opgave her">
-            <button onclick="addTask()" id="add-task-btn">Tilføj til listen</button>
-            <div class="buffer-s"></div>
-        </section>
+                <h4 class="margin-bottom">Tilføj opgave</h4>
+                <input type="text" class="margin-right" id="new-task-input" placeholder="Skriv din opgave her...">
+
+                <h4 class="margin-bottom">Prioritet</h4>
+                <form class="flex" action="">
+                    <input type="radio" name="priority" id="radio-high-priority" class="radio-button" checked>
+                    <label class="radio-text label-high padding-around" for="radio-high-priority">Høj</label>
+
+                    <input type="radio" name="priority" id="radio-medium-priority" class="radio-button">
+                    <label class="radio-text label-medium padding-around" for="radio-medium-priority">Middel</label>
+
+                    <input type="radio" name="priority" id="radio-low-priority" class="radio-button">
+                    <label class="radio-text label-low padding-around" for="radio-low-priority">Lav</label>
+                </form>
+
+                <div class="buffer-s"></div>
+                <button onclick="addTask()" id="add-task-btn" class="btn">Tilføj</button>
+             </section>
+        </main> 
         <div class="buffer-s"></div>
 
   
@@ -70,22 +68,16 @@
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
             <div class="nav-item">
-                <a href="../checkin.html" class="link-style-none">
-                    <i class="icon">❏</i>
-                    <p>Hjem</p>
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="../kurser.html" class="link-style-none">
-                    <i class="icon">❏</i>
-                    <p>Kurser</p>
-                </a>
+                <i class="icon">❏</i>
+                <p>Nav1</p>
             </div>
             <div class="nav-item active-nav">
-                <a href="../værktøjer.html" class="link-style-none">
-                    <i class="icon">❏</i>
-                    <p>Værktøjer</p>
-                </a>
+                <i class="icon">❏</i>
+                <p>Nav2</p>
+            </div>
+            <div class="nav-item">
+                <i class="icon">❏</i>
+                <p>Nav3</p>
             </div>
         </nav>
 
