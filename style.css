@@ -518,7 +518,6 @@ header{
 .dropdown p,
 .dropdown i{
     margin-top: 0;
-    height: 100%;
 }
 .dropdown .content p{
     margin: 0 100px 0 15px;
@@ -528,7 +527,7 @@ header{
 } 
 .dropdown .content3 p{
     margin: 0 130px 0 15px;
-} 
+}
 
 img{
     border-radius: var(--border-radius);
@@ -540,6 +539,30 @@ img{
 
 .dropdownrotate{
     transform: rotate(90deg);
+}
+
+.relative{
+    position: relative;
+}
+
+.dropdown-contents{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    margin-left: 55%;
+    margin-top: 9.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 35%;
+    z-index: 1;
+}
+
+.ddheadline{
+    margin-left: 15px;
+}
+
+.showdropdown{
+    display: block;
 }
 
 button{

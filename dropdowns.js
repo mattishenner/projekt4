@@ -12,6 +12,8 @@
 // }
 
 const dropDownArrow = document.querySelectorAll('.down-arrow');
+const dropDownContents = document.querySelectorAll('.dropdown-contents');
+
 
 function rotateArrow(index) {
   dropDownArrow.forEach((arrows) => {
@@ -24,4 +26,9 @@ function rotateArrow(index) {
       dropDownArrow[index].classList.remove('dropdownrotate');
     }
   });
+  dropDownMenu();
+}
+
+function dropDownMenu(){
+  dropDownContents.classList.add('showdropdown');
 }
