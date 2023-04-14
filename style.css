@@ -529,6 +529,7 @@ header{
 .dropdown .content3 p{
     margin: 0 130px 0 15px;
 } 
+
 img{
     border-radius: var(--border-radius);
 }
