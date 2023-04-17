@@ -11,6 +11,7 @@
     <script src="../../scripts/checkin.js" defer></script>
     <script src="../../scripts/time.js" defer></script>
     <script src="../../dropdowns.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
 
@@ -42,17 +43,17 @@
             <div class="dropdown-wrapper" tabindex="1">
                 <span>Varighed</span>
                 <ul class="dropdown-list">
-                    <li><a href="#">2 minutter</a></li>
-                    <li><a href="#">5 minutter</a></li>
-                    <li><a href="#">8 minutter</a></li>
-                    <li><a href="#">10 minutter</a></li>
+                    <li><a href="#" data-value="2">2 minutter</a></li>
+                    <li><a href="#" data-value="5">5 minutter</a></li>
+                    <li><a href="#" data-value="8">8 minutter</a></li>
+                    <li><a href="#" data-value="10">10 minutter</a></li>
                 </ul>
                 <img src="../../img/arrow.svg" class="down-arrow" alt="pil">
             </div>
 
-            <img src="../../img/rolig-vejrtrækning.png" alt="">
+            <lottie-player class="no-margin-top" src="https://lottie.host/916c3993-ad1b-461c-9f7c-afe224b6685d/37J61G5Ovx.json" background="transparent"  speed="1"  style="width: 100%;" loop></lottie-player>
             <div class="buffer"></div>
-            <a href="#" class="btn">Start</a> 
+            <a href="#" class="btn play-animation">Start</a> 
         </section>
 
         <!-- ********************** | NAVBAR | ********************** -->
