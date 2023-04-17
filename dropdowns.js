@@ -12,7 +12,7 @@
 // }
 
 const dropDownArrow = document.querySelectorAll('.down-arrow');
-const dropDownContents = document.querySelectorAll('.dropdown-contents');
+const dropDownContents = document.querySelector('.dropdown-contents');
 
 
 function rotateArrow(index) {
@@ -21,14 +21,14 @@ function rotateArrow(index) {
   });
   dropDownArrow[index].classList.add('dropdownrotate');
   document.addEventListener('click', function(event){
+    dropDownMenu();
     let isArrowClicked = dropDownArrow[index].contains(event.target);
     if (!isArrowClicked){
       dropDownArrow[index].classList.remove('dropdownrotate');
     }
   });
-  dropDownMenu();
 }
 
 function dropDownMenu(){
-  dropDownContents.classList.add('showdropdown');
+  dropDownContents.classList.toggle('showdropdown');
 }
