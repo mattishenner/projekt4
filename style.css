@@ -569,8 +569,6 @@ ul li span {
     border-radius: 10px;
 }
 
-
-
 #new-task-input {
     font-weight: 400;
     font-size: 1rem;
@@ -589,6 +587,14 @@ ul li span {
 #new-task-input:focus {
     outline: none !important;
     border: 2px solid var(--primary-color);
+}
+
+.to-do-label{
+    background-color: var(--primary-color);
+    display: inline-block;
+    transform: translateX(-10px);
+    padding: 5px 20px 5px 10px;
+    border-radius: 0 12px 12px 0;
 }
 
 

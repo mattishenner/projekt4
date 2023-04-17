@@ -18,23 +18,27 @@
 
     <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
-    <div class="phone-screen">
+    <div class="phone-screen background-blob">
         <!-- ********************** | TO-DO LISTE | ********************** -->
         <!-- ********************** | TO-DO LISTE | ********************** -->
         <header>
-            <p class="overline">Værktøjer</p>
-            <h1>To-do liste</h1>
+            <div class="buffer"></div>
+            <a href="main.html" class="back-arrow"><img src="../../../img/arrow.svg" alt=""></a>
+            <div class="buffer"></div>
+            <div class="overline">Værktøjer</div>
+            <h1>Prioriterings-liste</h1>
+            <p class="faded">MindMates prioriteringsliste er et værktøj til at finde ud af hvad der virkelig er vigtigst for dig. Det er sjældent muligt at nå alt det vi gerne vil i løbet af en dag. Derfor er der sat en naturlig begrænsning på listen, så du ikke overbooker dig selv og ender op med dårlig samvittighed over en halvt udført liste.</p>
         </header>
 
         <main>
             <section class="to-do-list margin">
-                <h5>Høj prioritet</h5>
+                <p class="to-do-label"><b>Høj prioritet</b></p>
                 <ul id="high-importance"></ul>
 
-                <h5>Middel prioritet</h5>
+                <p class="to-do-label"><b>Middel prioritet</b></p>
                 <ul id="medium-importance"></ul>
 
-                <h5>Lav prioritet</h5>
+                <p class="to-do-label"><b>Lav prioritet</b></p>
                 <ul id="low-importance"></ul>
             </section>
 
@@ -57,6 +61,7 @@
 
                 <div class="buffer-s"></div>
                 <button onclick="addTask()" id="add-task-btn" class="btn">Tilføj</button>
+                <div class="buffer-s"></div>
              </section>
         </main> 
         <div class="buffer-s"></div>
@@ -67,17 +72,23 @@
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav1</p>
+            <div class="nav-item flex column flex-end">
+                <a href="../checkin.html" class="link-style-none">
+                    <i class="icon"><img src="../../img/icons/home.svg" alt=""></i>
+                    <p>Hjem</p>
+                </a>
             </div>
-            <div class="nav-item active-nav">
-                <i class="icon">❏</i>
-                <p>Nav2</p>
+            <div class="nav-item flex column flex-end">
+                <a href="../kurser.html" class="link-style-none">
+                    <i class="icon"><img src="../../img/icons/courses.svg" alt="" class="course-icon"></i>
+                    <p>Kurser</p>
+                </a>
             </div>
-            <div class="nav-item">
-                <i class="icon">❏</i>
-                <p>Nav3</p>
+            <div class="nav-item active-nav flex column flex-end">
+                <a href="../værktøjer.html" class="link-style-none">
+                    <i class="icon"><img src="../../img/icons/tools.svg" alt=""></i>
+                    <p>Værktøjer</p>
+                </a>
             </div>
         </nav>
 
