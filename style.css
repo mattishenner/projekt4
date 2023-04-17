@@ -114,6 +114,7 @@ a {
 .btn,
 .btn-secondary {
     font-size: 1.25rem;
+    font-weight: 400;
     background-color: var(--primary-color);
     color: var(--background-color);
     border: none;
@@ -467,8 +468,9 @@ header {
     z-index: 1;
     padding-top: var(--margin);
 }
-
-
+.completed{
+    filter: invert(77%) sepia(19%) saturate(908%) hue-rotate(77deg) brightness(90%) contrast(82%);
+}
 /* ********************** | VÆRKTØJER | ********************** */
 /* ********************** | VÆRKTØJER | ********************** */
 .tools-card {
