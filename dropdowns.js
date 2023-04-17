@@ -20,15 +20,14 @@ function rotateArrow(index) {
     arrows.classList.remove('dropdownrotate');
   });
   dropDownArrow[index].classList.add('dropdownrotate');
+  dropDownContents.classList.add('showdropdown');
   document.addEventListener('click', function(event){
-    dropDownMenu();
     let isArrowClicked = dropDownArrow[index].contains(event.target);
-    if (!isArrowClicked){
+    let isMenuClicked = dropDownContents.contains(event.target);
+    if (!isArrowClicked && !isMenuClicked){
       dropDownArrow[index].classList.remove('dropdownrotate');
+      dropDownContents.classList.remove('showdropdown');
     }
   });
 }
 
-function dropDownMenu(){
-  dropDownContents.classList.toggle('showdropdown');
-}
