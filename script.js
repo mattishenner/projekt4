@@ -3,48 +3,48 @@
 //Her laves spørgsmålene til quizen + svarmulighederne
 const questions = [
     {
-        question: "Hvad er spørgsmål 1?",
+        question: "I nogle tilfælde kan stress, hjælpe en i en presset situation som for eksempel en eksamen, fordi:?",
         answers: [
-            { text: "Bla 1", correct: false},
-            { text: "Bla bla 2", correct: false},
-            { text: "Bla bla bla 3", correct: false},
-            { text: "Bla 4", correct: true}
+            { text: "Vi oplever en øget glæde og lyst til at snakke", correct: false},
+            { text: "Koncentrationen bliver skarpere og hurtigere", correct: true},
+            { text: "Hjernen falder til ro, og vi slapper mere af", correct: false},
+            { text: "Vi husker bedre i pressede situationer", correct: false}
         ]
     },
     {
-        question: "Hvad er spørgsmål 2?",
+        question: "Hvordan fjerner tror du at du bedst din eksamensangst?",
         answers: [
-            { text: "Bla 1", correct: false},
-            { text: "Bla bla 2", correct: true},
-            { text: "Bla bla bla 3", correct: false},
-            { text: "Bla 4", correct: false}
+            { text: "Ved at lave mindfulness-øvelser", correct: false},
+            { text: "Ved at meditere hver dag", correct: false},
+            { text: "Ved at skrive om din angst", correct: true},
+            { text: "Ved at tale om din angst", correct: false}
         ]
     },
     {
-        question: "Hvad er spørgsmål 3?",
+        question: "Forskning viser, at du skal motionere, efter du har læst til eksamen. Hvorfor tror du, at man skal det?",
         answers: [
-            { text: "Bla 1", correct: true},
-            { text: "Bla bla 2", correct: false},
-            { text: "Bla bla bla 3", correct: false},
-            { text: "Bla 4", correct: false}
+            { text: "Fordi du får fornyet energi til næste læsning", correct: false},
+            { text: "For at undgå nakkesmerter og andre gener, når du har siddet stille i lang tid", correct: false},
+            { text: "Fordi man skal afstresse ved at få pulsen op", correct: false},
+            { text: "Fordi du bliver bedre til at huske det, du læste, hvis du får pulsen op, efter du har læst det.", correct: true}
         ]
     },
     {
-        question: "Hvad er spørgsmål 4?",
+        question: "9. Hvorfor er det godt at skrive eksamensnoter med skrifttyper som Comic Sans og Bodoni MT?",
         answers: [
-            { text: "Bla 1", correct: false},
-            { text: "Bla bla 2", correct: false},
-            { text: "Bla bla bla 3", correct: true},
-            { text: "Bla 4", correct: false}
+            { text: "De to skrifttyper gør det sværere for censor og din lærer at se, hvad du har skrevet i dine noter", correct: false},
+            { text: "De hukommeelse bliver bedre, hvis du skriver med en anden skrifttype end du er vant til", correct: false},
+            { text: "Jo sværere du gør det for dig selv at læse og forstå stoffet med ‘besværlige’ skrifttyper, jo mere vil du huske det", correct: true},
+            { text: "Din hjerne har gavn af, at dine noter på computeren ser ud, som om de er håndskrevne", correct: false}
         ]
     },
     {
-        question: "Hvad er spørgsmål 5?",
+        question: "Hvad er de vigtigste ting, du skal huske, når du begynder at læse til eksamen??",
         answers: [
-            { text: "Bla 1", correct: false},
-            { text: "Bla bla 2", correct: true},
-            { text: "Bla bla bla 3", correct: false},
-            { text: "Bla 4", correct: false}
+            { text: "At få læst et tilstrækkeligt med antal sider", correct: false},
+            { text: "At kunne alt udenad", correct: false},
+            { text: "At huske mest muligt", correct: false},
+            { text: "At spørge, hvad er det, jeg bliver bedt om at forstå her?", correct: true}
         ]
     }
 ];
