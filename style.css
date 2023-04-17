@@ -639,7 +639,7 @@ img{
     background-color: var(--primary-color);
     border: none;
     color: var(--background-color);
-    padding: 20px;
+    padding: 15px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -649,8 +649,4 @@ img{
     font-weight: 600;
     font-size: 20px;
     margin: var(--margin);
-  }
-.opret-button a {
-    text-decoration: none;
-    color: var(--background-color);
   }
