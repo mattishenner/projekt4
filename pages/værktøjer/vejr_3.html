@@ -6,20 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../dropdown.css">
     <script src="../../script.js" defer></script>
-    <script src="../../scripts/checkin.js" defer></script>
-    <script src="../../scripts/time.js" defer></script>
+    <script src="../../dropdowns.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-
-<!-- ********************** | VEJLEDNING | ********************** -->
-<!-- ********************** | VEJLEDNING | ********************** -->
-<!-- 
-Hvis et element skal have flex gives class "flex"
-Hvis indhold i en container skal centreres horisontalt gives class "center-x"
-Hvis indhold i en container skal centreres vertikalt gives class "center-y"
- -->
-
 
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
@@ -35,42 +27,51 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
         </header>
 
         <section class="margin">
-            <div class="dropdown flex center-y space-between">
-                <div class="content">
-                    <p class="overline">Baggrundslyd</p> 
-                </div>
-                <i class="icon margin-right">❏</i>
+            <div class="dropdown-wrapper" tabindex="1">
+                <span>Baggrundslyd</span>
+                <ul class="dropdown-list">
+                    <li><a href="#">Rolig musik</a></li>
+                    <li><a href="#">Regn</a></li>
+                    <li><a href="#">Bølger</a></li>
+                    <li><a href="#">Regnskov</a></li>
+                </ul>
+                <img src="../../img/arrow.svg" class="down-arrow" alt="pil">
             </div>
-            <div class="dropdown flex center-y space-between">
-                <div class="content2">
-                    <p class="overline">5 min</p> 
-                </div>
-                <i class="icon margin-right">❏</i>
+            
+            <div class="dropdown-wrapper" tabindex="1">
+                <span>Varighed</span>
+                <ul class="dropdown-list">
+                    <li><a href="#" data-value="2">2 minutter</a></li>
+                    <li><a href="#" data-value="5">5 minutter</a></li>
+                    <li><a href="#" data-value="8">8 minutter</a></li>
+                    <li><a href="#" data-value="10">10 minutter</a></li>
+                </ul>
+                <img src="../../img/arrow.svg" class="down-arrow" alt="pil">
             </div>
 
-            <img src="../../img/rolig-vejrtrækning.png" alt="">
+            <lottie-player class="no-margin-top" src="https://lottie.host/916c3993-ad1b-461c-9f7c-afe224b6685d/37J61G5Ovx.json" background="transparent"  speed="1"  style="width: 100%;" loop></lottie-player>
             <div class="buffer"></div>
-            <a href="#" class="btn">Start</a> 
+            <a href="#" class="btn play-animation">Start</a> 
         </section>
 
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
         <nav>
-            <div class="nav-item">
+            <div class="nav-item flex column flex-end">
                 <a href="../checkin.html" class="link-style-none">
-                    <i class="icon">❏</i>
+                    <i class="icon"><img src="../../img/icons/home.svg" alt=""></i>
                     <p>Hjem</p>
                 </a>
             </div>
-            <div class="nav-item">
+            <div class="nav-item flex column flex-end">
                 <a href="../kurser.html" class="link-style-none">
-                    <i class="icon">❏</i>
+                    <i class="icon"><img src="../../img/icons/courses.svg" alt="" class="course-icon"></i>
                     <p>Kurser</p>
                 </a>
             </div>
-            <div class="nav-item active-nav">
+            <div class="nav-item active-nav flex column flex-end">
                 <a href="../værktøjer.html" class="link-style-none">
-                    <i class="icon">❏</i>
+                    <i class="icon"><img src="../../img/icons/tools.svg" alt=""></i>
                     <p>Værktøjer</p>
                 </a>
             </div>

@@ -21,22 +21,28 @@ function handleCheckInClick(smileyClicked){
     if (smileyClicked === 1 && lastClicked !== 1){
         lastClicked = 1;
         returnContent = 
-        `<p>Du er trist :(</p>
-        <p>Det er trist.</p>`
+        `<p><b>Let’s turn that frown upside down!</b></p>
+        <p>Det ser ud til, at du har brug for lidt ekstra fokus på dig selv i dag. Noget der hjælper på både stress og overvældende følelser, er vejrtrækningsøvelser. Skal vi ikke tjekke dem ud?</p>
+        <a href="#">Lad os gøre det</a>`
     } else if (smileyClicked === 2 && lastClicked !== 2){
         lastClicked = 2;
         returnContent = 
-        `<p>Du er lidt meh i dag :I</p>`
+        `<p><b>Alle dage, er ikke lige gode</b></p>
+        <p>Nogle dage er humøret bare ikke i top - det er også helt okay. Det gør kontrasten til de gode dage større! Måske dit humør kunne blive bedre, af at lytte til noget afslappende musik?</p>
+        <a href="#">Lad os gøre det</a>`
     } else if (smileyClicked === 3 && lastClicked !== 3){
         lastClicked = 3;
         returnContent = 
-        `<p>Forskning viser, at et afslappet humør gør os i stand til at lære bedre, da opmærksomheden skærpes.
-        Overvej at udnytte dit gode humør til at få mere ud af et mini-kursus.</p>
+        `<p><b>Gode dage skal man samle på!</b></p>
+        <p>Overvej om du skal udnytte dit gode humør til at opdatere din prioriteringslisteliste, så du kan være på forkant med dagens opgaver. Et godt overblik over ting man skal nå, er altid godt til at skabe mentalt overskud.</p>
         <a href="#">Lad os gøre det</a>`
     } else if (smileyClicked === 4 && lastClicked !== 4){
         lastClicked = 4;
         returnContent = 
-        `<p>Du er kæmpe glad! :D</p>`
+        `<p><b>Dejligt at du har en god dag!</b></p>
+        <p>Forskning viser, at et afslappet humør gør os i stand til at lære bedre, da opmærksomheden skærpes. Overvej at udnytte dit gode humør til at få mere ud af et mini-kursus.
+        </p>
+        <a href="#">Lad os gøre det</a>`
     } else {
         returnContent = "";
         lastClicked = 0;
