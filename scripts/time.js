@@ -1,4 +1,4 @@
-function getGreeting() {
+export function getGreeting() {
     let today = new Date();
     let time = today.getHours()
     let greeting;
@@ -15,5 +15,5 @@ function getGreeting() {
     } else if (time >= 18){
         greeting = "Godaften"
     }
-    console.log(greeting)
+    return greeting;
 }
