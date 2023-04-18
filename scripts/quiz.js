@@ -28,7 +28,7 @@ const questions = [
         ]
     },
     {
-        question: "9. Hvorfor er det godt for nogle at skrive eksamensnoter med skrifttyper som Comic Sans og Bodoni MT?",
+        question: "Hvorfor er det godt for nogle at skrive eksamensnoter med skrifttyper som Comic Sans og Bodoni MT?",
         answers: [
             { text: "De to skrifttyper gør det sværere for censor og din lærer at se, hvad du har skrevet i dine noter", correct: false},
             { text: "De hukommeelse bliver bedre, hvis du skriver med en anden skrifttype end du er vant til", correct: false},
@@ -52,6 +52,7 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const continueButton = document.getElementById("continue-btn");
+const quizContainer = document.querySelector(".quiz");
 
 //Variabler for at holde styr på spørgsmåls index og score
 let currentQuestionIndex = 0;
@@ -121,11 +122,12 @@ function selectAnswer(e){
 }
 
 function showScore(){
+    playAnimation();
     resetState();
     questionElement.innerHTML = `Godt gået!<br><br>Du svarede rigtigt på ${score} ud af ${questions.length}!`;
+    continueButton.style.marginBottom = "200px";
     continueButton.innerHTML = "Færdig";
     continueButton.style.display = "block";
-    playAnimation();
 };
 
 // Vil vise spørgsmål eller score, hvis der ikke er flere spørgsmål
