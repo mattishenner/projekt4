@@ -538,7 +538,7 @@ header {
     font-size: 0.875rem;
 }
 
-.add-to-do-section {}
+/* .add-to-do-section {} */
 
 .to-do-list li::before {
     content: "";
