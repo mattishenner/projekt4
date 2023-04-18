@@ -4,38 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts/quiz.js" defer></script>
+    <title>Quiz i eksamensangst - MindMate</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../scripts/quiz.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
 </head>
 <body>
-
-<!-- ********************** | VEJLEDNING | ********************** -->
-<!-- ********************** | VEJLEDNING | ********************** -->
-<!-- 
-Hvis et element skal have flex gives class "flex"
-Hvis indhold i en container skal centreres horisontalt gives class "center-x"
-Hvis indhold i en container skal centreres vertikalt gives class "center-y"
- -->
-
-
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
 <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <div class="phone-screen">        
-        <!-- ********************** | CHECK IN | ********************** -->
-        <!-- ********************** | CHECK IN | ********************** -->
+
+        <!-- Titel + beskrivelse + navigation -->
         <header class="sticky">
-            <i class="icon">❏</i>
             <div class="buffer-s"></div>
+            <a href="kurser/eksamensangst/main.html" class="back-arrow"><img src="../../img/arrow.svg" alt=""></a>
             <div class="buffer-s"></div>
             <div class="overline">Eksamensangst</div>
             <h1>Quiz</h1>
         </header>
+
+        <!-- Quiz-container -->
         <main>
             <div class="app">
                 <div class="quiz">
-                    <h3 id="question" class="margin">Spørgsmål her</h3>
+                    <h3 id="question">Spørgsmål her</h3>
                     <div id="answer-buttons">
                         <button class="answer-btn">Svar 1</button>
                         <button class="answer-btn">Svar 2</button>
@@ -44,7 +36,7 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
                     </div>
                     <div class="confetti" id="animation container"></div>
                     <button id="next-btn">Næste</button>
-                    <a href="pages/checkin.html">
+                    <a href="checkin.html">
                         <button id="continue-btn">Forsæt med quiz</button>
                     </a>
                 </div>
@@ -53,7 +45,26 @@ Hvis indhold i en container skal centreres vertikalt gives class "center-y"
 
         <!-- ********************** | NAVBAR | ********************** -->
         <!-- ********************** | NAVBAR | ********************** -->
-
+        <nav>
+            <div class="nav-item flex column flex-end">
+                <a href="checkin.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/home.svg" alt=""></i>
+                    <p>Hjem</p>
+                </a>
+            </div>
+            <div class="nav-item active-nav flex column flex-end">
+                <a href="kurser.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/courses.svg" alt="" class="course-icon"></i>
+                    <p>Kurser</p>
+                </a>
+            </div>
+            <div class="nav-item flex column flex-end">
+                <a href="værktøjer.html" class="link-style-none">
+                    <i class="icon"><img src="../img/icons/tools.svg" alt=""></i>
+                    <p>Værktøjer</p>
+                </a>
+            </div>
+        </nav>
 
     </div>
     

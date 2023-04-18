@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prioriterings-liste - MindMate</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
     <div class="phone-screen background-blob">
@@ -31,6 +30,7 @@
         </header>
 
         <main>
+            <!-- Sektion som viser ens indtastede tasks -->
             <section class="to-do-list margin">
                 <p class="to-do-label"><b>Høj prioritet</b></p>
                 <ul id="high-importance"></ul>
@@ -42,11 +42,10 @@
                 <ul id="low-importance"></ul>
             </section>
 
+            <!-- Sektion hvor man tilføjer nye tasks til sin liste -->
             <section class="add-to-do-section padding">
-
                 <h4 class="margin-bottom">Tilføj opgave</h4>
                 <input type="text" class="margin-right" id="new-task-input" placeholder="Skriv din opgave her...">
-<!-- hej -->
                 <h4 class="margin-bottom">Prioritet</h4>
                 <form class="flex" action="">
                     <input type="radio" name="priority" id="radio-high-priority" class="radio-button" checked>
@@ -64,6 +63,7 @@
                 <div class="buffer-s"></div>
              </section>
         </main> 
+        
         <div class="buffer-s"></div>
 
   

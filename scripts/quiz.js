@@ -154,7 +154,7 @@ startQuiz();
 // *************** Confetti Animation *************** //
 let animation = bodymovin.loadAnimation({
     container: document.getElementById('animation container'),
-    path: 'scripts/confetti-animation.json',
+    path: '../scripts/confetti-animation.json',
     render: 'svg',
     loop: false,
     autoplay: false,
@@ -165,7 +165,7 @@ const confetti = document.querySelector(".confetti");
 
 function resetAnimation() {
     animation.goToAndStop(0, true);
-    confetti.style.opacity = "1";
+    confetti.style.opacity = "0";
 }
 
 function playAnimation() {

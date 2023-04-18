@@ -780,6 +780,8 @@ img {
 /* ********************** | QUIZ | ********************** */
 .app{
     background-color: var(--card-color);
+    position: relative;
+    z-index: 1;
 }
 .app h3{
     padding: 20px;
@@ -789,6 +791,7 @@ img {
 
 .quiz{
     padding: 40px 0;
+    position: relative;
 }
 .quiz a{
     text-decoration: none;
@@ -827,7 +830,7 @@ img {
     background: var(--primary-color);
 }
 .incorrect{
-    background: red;
+    background: rgb(232, 121, 121);
 }
 .confetti{
     position: absolute;
