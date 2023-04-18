@@ -516,8 +516,10 @@ header{
 
 /* ************** Quiz ************** */
 .app{
-    background-color: #fff;
+    background-color: var(--card-color);
     border-radius: var(--border-radius);
+    position: relative;
+    z-index: 1;
 }
 .app h3{
     padding: 20px;
@@ -531,11 +533,10 @@ header{
     text-decoration: none;
 }
 .answer-btn{
-    background: #ECECE5;
+    background: var(--background-color);
     color: var(--black);
     font-size: 1rem;
-    font-weight: 600;
-    width: 80%;
+    width: 90%;
     border: none;
     padding: 14px;
     margin: 10px 0;
@@ -552,11 +553,11 @@ header{
     background: var(--primary-color);
     color: var(--background-color);
     font-size: 1.25rem;
-    width: 85%;
+    width: 92%;
     border: none;
     text-decoration: none;
     padding: 0.75rem 0;
-    margin: 20px auto 0;
+    margin: 20px var(--margin) 0;
     border-radius: calc(var(--border-radius)/2);
     cursor: pointer;
     display: none;

@@ -12,7 +12,7 @@ const questions = [
         ]
     },
     {
-        question: "Hvordan fjerner tror du at du bedst din eksamensangst?",
+        question: "Hvordan tror du at man bedst minimere sin eksamensangst?",
         answers: [
             { text: "Ved at lave mindfulness-øvelser", correct: false},
             { text: "Ved at meditere hver dag", correct: false},
@@ -30,11 +30,11 @@ const questions = [
         ]
     },
     {
-        question: "9. Hvorfor er det godt at skrive eksamensnoter med skrifttyper som Comic Sans og Bodoni MT?",
+        question: "9. Hvorfor er det godt for nogle at skrive eksamensnoter med skrifttyper som Comic Sans og Bodoni MT?",
         answers: [
             { text: "De to skrifttyper gør det sværere for censor og din lærer at se, hvad du har skrevet i dine noter", correct: false},
             { text: "De hukommeelse bliver bedre, hvis du skriver med en anden skrifttype end du er vant til", correct: false},
-            { text: "Jo sværere du gør det for dig selv at læse og forstå stoffet med ‘besværlige’ skrifttyper, jo mere vil du huske det", correct: true},
+            { text: `Jo sværere du gør det for dig selv at læse og forstå stoffet med "besværlige" skrifttyper, jo mere vil du huske det`, correct: true},
             { text: "Din hjerne har gavn af, at dine noter på computeren ser ud, som om de er håndskrevne", correct: false}
         ]
     },
