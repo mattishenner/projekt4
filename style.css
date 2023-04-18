@@ -637,3 +637,16 @@ button{
     border-width: 0;
     cursor: pointer;
 }
+
+/* ********************** | Sign-up side | ********************** */
+/* ********************** | Sign-up side | ********************** */
+.signup-field {
+    background-color: var(--card-color);
+    border: solid 0px var(--primary-color);
+    padding: 1rem;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: calc(var(--border-radius)/2);
+  }
