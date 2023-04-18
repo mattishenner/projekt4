@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="scripts/checkin.js" defer></script>
-    <script src="scripts/time.js" defer></script>
+    <script type="module" src="script.js" defer></script>
+    <script type="module" src="scripts/exsistingUser.js" defer></script>
+    <script src="scripts/user-input.js" defer></script>
 </head>
 
 <body>
@@ -20,16 +20,12 @@
         <section class="preloader flex column">
             <img src="img/logo.svg" alt="MindMate" class="margin">
             <main class="login-container column fade-in-delayed">
-
-                <div class="buffer"></div>
-                <div class="login-text">
-                    <!-- <h4 class="center-text no-margin-top">Lad os komme i gang</h4> -->
-                </div>
-                <div class="margin">
-                    <a href="pages/checkin.html" class="btn-secondary">Log ind</a>
+                <form class="margin">
+                    <div class="buffer-l"></div>
+                    <input type="text" id="username" name="name" placeholder="Hvad hedder du?" class="signup-field" required>
                     <div class="buffer-s"></div>
-                    <a href="signup.html" class="btn">Opret</a>
-                </div>
+                    <button type="submit" class="btn">Fortsæt</button>
+                </form>
             </main>
         </section>
 

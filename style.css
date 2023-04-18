@@ -603,50 +603,13 @@ img{
 
 /* ********************** | Sign-up side | ********************** */
 /* ********************** | Sign-up side | ********************** */
-.signup-flex {
-    height: 60vh;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-.signup-h1 {
-    color: var(--dark-color);
-    margin-top: 70px;
-    font-weight: 600;
-    font-size: 40px;
-    text-align: center;
-  }
-.signup-h2 {
-    color: var(--dark-color);
-    margin-top: -3px;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-  }
 .signup-field {
-    background-color: #FFFFFF;
+    background-color: var(--card-color);
     border: solid 0px var(--primary-color);
-    padding: 15px;
+    padding: 1rem;
     display: block;
-    text-align: left;
-    font-size: 16px;
-    border-radius: 15px;
-    margin-bottom: 12px;
-    margin-right: 15px;
-    margin-left: 15px;
-    font-weight: 500;
-  }
-.opret-button {
-    background-color: var(--primary-color);
-    border: none;
-    color: var(--background-color);
-    padding: 15px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 15px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 20px;
-    margin: var(--margin);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: calc(var(--border-radius)/2);
   }
