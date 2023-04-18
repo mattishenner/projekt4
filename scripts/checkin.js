@@ -34,7 +34,7 @@ function handleCheckInClick(smileyClicked){
         lastClicked = 3;
         returnContent = 
         `<p><b>Gode dage skal man samle på!</b></p>
-        <p>Overvej om du skal udnytte dit gode humør til at opdatere din to-do-liste, så du kan være på forkant med dagens opgaver. Et godt overblik over ting man skal nå, er altid godt til at skabe mentalt overskud.</p>
+        <p>Overvej om du skal udnytte dit gode humør til at opdatere din prioriteringslisteliste, så du kan være på forkant med dagens opgaver. Et godt overblik over ting man skal nå, er altid godt til at skabe mentalt overskud.</p>
         <a href="#">Lad os gøre det</a>`
     } else if (smileyClicked === 4 && lastClicked !== 4){
         lastClicked = 4;
