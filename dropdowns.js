@@ -50,7 +50,6 @@ dropdowns.forEach((dd) => {
     element.addEventListener('click', function(evt) {
       span.innerHTML = evt.currentTarget.textContent;
       animationLength = element.dataset.value;
-      console.log(animationLength);
     })
   })
 })
