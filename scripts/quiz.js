@@ -47,7 +47,7 @@ const questions = [
     }
 ];
 
-//Tilføjelse af variablerne for 3 elementer (question, answer-btn, next-btn)
+//Tilføjelse af variablerne for 5 elementer
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
