@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../dropdown.css">
+    <script src="../../script.js" defer></script>
+    <script src="../../scripts/checkin.js" defer></script>
+    <script src="../../scripts/time.js" defer></script>
+    <script src="../../dropdowns.js" defer></script>
+</head>
+<body>
+
+<!-- ********************** | VEJLEDNING | ********************** -->
+<!-- ********************** | VEJLEDNING | ********************** -->
+<!-- 
+Hvis et element skal have flex gives class "flex"
+Hvis indhold i en container skal centreres horisontalt gives class "center-x"
+Hvis indhold i en container skal centreres vertikalt gives class "center-y"
+ -->
+
+
+<!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
+<!-- ********************** | TELEFON-SKABELON - alt skal laves heri | ********************** -->
+    <div class="phone-screen background-blob">        
+        <header>
+            <div class="buffer-s"></div>
+            <a href="../værktøjer.html" class="back-arrow"><img src="../../../img/arrow.svg" alt=""></a>
+            <div class="buffer-s"></div>
+            <div class="overline">Værktøj</div>
+            <h1>Afslappende musik</h1>
+            <p class="faded">Her finder du afslappende baggrundsmusik, der hjælper dig med at holde koncentrationen høj og pulsen lav, imens du studerer. Lidt rolig baggrundsmusik hjælper også mange under meditation og vejrtrækningsøvelser.</p>
+        </header>
+
+        <section class="margin">
+            <div class="dropdown-wrapper" tabindex="1">
+                <span>Playliste</span>
+                <ul class="dropdown-list">
+                    <li><a href="#">Lo-fi Beats</a></li>
+                    <li><a href="#">Lo-fi Jazz</a></li>
+                    <li><a href="#">Klassisk</a></li>
+                    <li><a href="#">Chill hop</a></li>
+                </ul>
+                <img src="../../img/arrow.svg" class="down-arrow" alt="pil">
+            </div>
+
+            <div class="buffer-s"></div>
+
+            <div>
+                <iframe width="100%" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+<!-- ********************** | Skal slettes senere | ********************** -->
+<!-- ********************** | Skal slettes senere | ********************** -->
+<div class="buffer"></div>
+<div class="buffer"></div>
+<div class="buffer"></div>
+<div class="buffer"></div>
+<div class="buffer"></div>
+
+        <!-- ********************** | NAVBAR | ********************** -->
+        <!-- ********************** | NAVBAR | ********************** -->
+        <nav>
+            <div class="nav-item flex column flex-end">
+                <a href="../checkin.html" class="link-style-none">
+                    <i class="icon"><img src="../../img/icons/home.svg" alt=""></i>
+                    <p>Hjem</p>
+                </a>
+            </div>
+            <div class="nav-item flex column flex-end">
+                <a href="../kurser.html" class="link-style-none">
+                    <i class="icon"><img src="../../img/icons/courses.svg" alt="" class="course-icon"></i>
+                    <p>Kurser</p>
+                </a>
+            </div>
+            <div class="nav-item active-nav flex column flex-end">
+                <a href="../værktøjer.html" class="link-style-none">
+                    <i class="icon"><img src="../../img/icons/tools.svg" alt=""></i>
+                    <p>Værktøjer</p>
+                </a>
+            </div>
+        </nav>
+
+    </div>
+    
+</body>
+</html>
