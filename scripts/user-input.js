@@ -1,3 +1,5 @@
+// Lavet af Jonas
+
 const form = document.querySelector('form');
 const nameInput = document.getElementById('username');
 

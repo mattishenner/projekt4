@@ -1,27 +1,18 @@
+// Lavet af Mattis
+
 const smileys = document.querySelectorAll(".smiley");
 
-
-//Loop gennem alle smileys i dokumentet
 for (let i = 0; i < smileys.length; i++) {
-    // Lav en array som indeholder smileys bortset fra den i det nuværende loop
     const otherSmileys = Array.from(smileys).filter((el, j) => j !== i);
-
-    // Tilføj en click event listener til den nuværende smiley
     smileys[i].addEventListener("click", () => {
-        // Fjern inactive-smiley class hvis smileyen bliver klikket på
         smileys[i].classList.remove("inactive-smiley");
-
-        //Sørg for at de andre smileyer, som vi jo nu har i en array, får tilføjet inactive-smiley class, med et foreach loop
         otherSmileys.forEach((el) => {
             el.classList.add("inactive-smiley");
         });
-
-        // Kald handleCheckInClick funktionen med den nuværende smileys index plus 1 (for mere læselig kode i handleCheckInClick funktionen)
         handleCheckInClick(i + 1);
     });
 }
 
-//vi laver en lastClicked variabel, for at vi kan gøre noget andet hvis man trykker på den samme smiley to gange (da det jo så er for at trække sit checkin tilbage)
 let lastClicked = 0;
 function handleCheckInClick(smileyClicked){
     const resultContainer = document.getElementById("check-in-result");

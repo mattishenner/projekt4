@@ -1,3 +1,5 @@
+// Lavet af Mattis
+
 if (localStorage.getItem("username") === null) {
     console.log("Intet username")
 } else {

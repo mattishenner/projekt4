@@ -1,3 +1,5 @@
+// Lavet af Mattis
+
 export function getGreeting() {
     let today = new Date();
     let time = today.getHours()

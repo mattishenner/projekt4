@@ -1,4 +1,6 @@
-import { getGreeting } from "./scripts/time.js";
+// Lavet af Mattis
+
+import { getGreeting } from "./time.js";
 
 if (document.getElementById("greeting")){
     const greetingText = document.getElementById("greeting");

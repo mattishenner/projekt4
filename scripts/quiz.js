@@ -1,3 +1,5 @@
+// Lavet af Simon
+
 //Her laves spørgsmålene til quizen + svarmulighederne
 const questions = [
     {

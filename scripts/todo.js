@@ -1,3 +1,4 @@
+// Lavet af Sarah
 
 const newTaskInput = document.getElementById("new-task-input");
 const highImportanceList = document.getElementById("high-importance");
